@@ -1,3 +1,3 @@
-# compare-markup
+# Compare-markup
 This is public repository for design implementation(markup) of compare application
-Just plain HTML & CSS
+# Just a plain HTML & CSS
