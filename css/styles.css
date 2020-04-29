@@ -25,6 +25,9 @@ span.tab-title:hover, span.tab-title.active {
   color: #ff4136;
 }
 
+figure {
+  margin: 0;
+}
 img {
   width: auto;
   max-width: 100%;
@@ -352,10 +355,13 @@ header {
   flex-direction: column;
   padding: 30px 12px 18px 12px;
 }
-.item-info .product-picture {
+.item-info figure.product-picture {
   align-self: center;
   margin-bottom: 12px;
   text-align: center;
+}
+.product-picture .picture-link {
+  display: block;
 }
 .item-info .category-name {
   text-transform: uppercase;
@@ -553,4 +559,165 @@ section.info-section .bottom-animated {
 /* News Reviews Section */
 .news-reviews-container {
   padding: 40px 0;
+}
+.latest-news {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+}
+.latest-news .latest-news-title {
+  background-color: #ff4136;
+  font-size: 12px;
+  font-family: Arial, Tahoma, sans-serif;
+  color: #FFFFFF;
+  padding: 3px 7px;
+  border-radius: 3px;
+  margin-right: 6px;
+  text-transform: uppercase;
+}
+.latest-news .latest-news-items {
+  display: flex;
+  align-items: center;
+}
+.latest-news-items button.switch-button {
+  background-color: transparent;
+  padding: 3px;
+  margin: 0 3px;
+  font-size: 16px;
+}
+.latest-articles {
+  position: relative;
+  height: 18px;
+  overflow: hidden;
+}
+.latest-articles li {
+  padding: 0 0 2px 6px;
+}
+.latest-articles li a,
+.latest-articles li a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+.news-reviews-list {
+  display: flex;
+  margin: 0 -12px;
+}
+.news-reviews-list .news-review-item {
+  margin: 0 12px 24px;
+  background-color: #FFFFFF;
+  box-shadow: rgba(0, 0, 0, .15) 0 1px 2px;
+  border-top: 1px solid #efefef;
+  position: relative;
+  flex: 1;
+}
+.news-review-item .like-review {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  color: #AAAAAA;
+  transition: color ease .3s;
+}
+.news-review-item .like-review:hover {
+  cursor: pointer;
+  color: #cc0000;
+}
+.news-review-item .news-reviews-banner {
+  margin-bottom: 18px;
+}
+.news-reviews-banner a {
+  display: block;
+  font-size: 0;
+  text-align: center;
+}
+.news-review-item .news-reviews-title {
+  padding: 0 18px 48px;
+}
+.news-reviews-title h6 {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.news-reviews-title h6 a {
+  transition: color ease .3s;
+}
+.news-reviews-title h6 a:hover {
+  color: #ff4136;
+}
+.news-reviews-title .type {
+  font-style: italic;
+  font-size: 12px;
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+}
+
+/* Footer Section */
+footer {
+  background: #3F3F3F url('../assets/images/footerbg.jpg') no-repeat center bottom;
+  padding: 42px 0 60px;
+}
+footer .footer-content {
+  display: flex;
+  margin: 0 -18px;
+}
+.footer-content .footer-item {
+  margin: 0 18px;
+  padding: 12px 0;
+  flex: 1;
+  color: #CCCCCC;
+}
+.footer-item h5 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #F1F1F1;
+  padding-bottom: 18px;
+}
+.footer-item p {
+  font-size: 12px;
+  line-height: 20px;
+  padding-bottom: 18px;
+}
+.footer-item .footer-links {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-links .footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-info a {
+  font-size: 14px;
+  text-decoration: underline;
+  color: #F1F1F1;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+.footer-item form label {
+  font-size: 12px;
+  display: block;
+  margin-bottom: 24px;
+}
+.footer-item form .newsletter-input {
+  display: flex;
+}
+.newsletter-input input {
+  border: none;
+  flex-grow: 1;
+  font-size: 15px;
+  padding: 12px 10px;
+  border-radius: 0;
+  background-color: #f6f6f6;
+  color: #444444;
+}
+.newsletter-input button.newsletter-subscribe {
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+  min-width: 150px;
+  background-color: #5eb936;
+  padding: 12px 10px;
+  margin: 0;
 }
