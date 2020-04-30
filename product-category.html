@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Category</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
+  <link href="./css/styles.css" type="text/css" rel="stylesheet">
+  <link href="./css/product-category.css" type="text/css" rel="stylesheet">
+  <link href="./css/product-list-item.css" type="text/css" rel="stylesheet">
+  <link href="./css/responsive-styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="page-container">
+  <header>
+    <div class="content-wrapper">
+      <div class="header-container">
+        <a href="/" class="logo">
+          <img src="./assets/images/logosmall.png" alt="Compare App">
+        </a>
+        <label class="mobile-menu" for="mobile-menu-trigger">
+          <i class="fa fa-bars"></i>
+        </label>
+        <input type="checkbox" id="mobile-menu-trigger" hidden>
+        <nav class="header-navigation">
+          <ul class="nav-container">
+            <li>
+              <a href="#">Shop</a>
+            </li>
+            <li>
+              <a href="#">🔥 Unique Functions<i class="fa fa-chevron-down"></i></a>
+              <ul class="sub-menu">
+                <li><a href="#">Compare few items function</a></li>
+                <li><a href="#">Super function</a></li>
+                <li><a href="#">Extra function</a></li>
+                <li><a href="#">Amazing function</a></li>
+                <li><a href="#">Awesome function</a></li>
+                <li><a href="#">Ideal function</a></li>
+                <li><a href="#">Awesome Mega Super Unbelievable function!</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">💰 Best conversations pages<i class="fa fa-chevron-down"></i></a>
+              <ul class="sub-menu">
+                <li><a href="#">Frontend Search</a></li>
+                <li><a href="#">Listing example</a></li>
+                <li><a href="#">Top set page</a></li>
+                <li><a href="#">Versus Page</a></li>
+                <li><a href="#">Versus Page 2</a></li>
+                <li><a href="#">Top review List</a></li>
+                <li><a href="#">Price Range Page</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">💗 My wishlist</a>
+            </li>
+          </ul>
+        </nav>
+        <label class="mobile-menu-overlay" for="mobile-menu-trigger"></label>
+      </div>
+    </div>
+  </header>
+  <section class="product-category">
+    <div class="content-wrapper">
+      <div class="category-content">
+        <div class="main-content">
+          <nav class="breadcrumbs">
+            <a href="/">Home</a>
+            <i class="fa fa-angle-right separator"></i>
+            <span>Best Products</span>
+          </nav>
+          <h1 class="category-name">Best Products</h1>
+          <div class="filters-container">
+            <input type="checkbox" id="filters-toggle" hidden>
+            <div class="filters-title">
+              <label for="filters-toggle"><i class="fa fa-sliders"></i></label>
+              <strong>Filter Products</strong>&nbsp;/&nbsp;Showing all 12 products
+            </div>
+            <div class="filters-details">
+              <div class="selected-filters">
+                <div class="selected-filter-item">
+                  <div class="filter-name">Best Products</div>
+                  <span class="remove-filter"><i class="fa fa-times"></i></span>
+                </div>
+              </div>
+              <div class="filters-types">
+                <div class="filter-type">
+                  <h6>Price</h6>
+                  <div class="filter-options">
+                    <label>
+                      <input type="checkbox" hidden>
+                      <span>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-circle-thin"></i>
+                        None
+                      </span>
+                    </label>
+                    <label>
+                      <input type="checkbox" hidden>
+                      <span>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-circle-thin"></i>
+                        $0.00 - $100.00
+                      </span>
+                    </label>
+                    <label>
+                      <input type="checkbox" hidden>
+                      <span>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-circle-thin"></i>
+                        $100.00 - $500.00
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="filter-type">
+                  <h6>Categories</h6>
+                  <div class="filter-options">
+                    <label>
+                      <input type="checkbox" hidden>
+                      <span>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-circle-thin"></i>
+                        None
+                      </span>
+                    </label>
+                    <label>
+                      <input type="checkbox" checked hidden>
+                      <span>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-circle-thin"></i>
+                        Best Products
+                        <span>14</span>
+                      </span>
+                    </label>
+                    <label>
+                      <input type="checkbox" disabled hidden>
+                      <span>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-circle-thin"></i>
+                        Other Products
+                        <span>6/11</span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="filter-type">
+                  <h6>Options</h6>
+                  <div class="filter-options">
+                    <label>
+                      <input type="checkbox" hidden>
+                      <span>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-circle-thin"></i>
+                        None
+                      </span>
+                    </label>
+                    <label>
+                      <input type="checkbox" disabled hidden>
+                      <span>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-circle-thin"></i>
+                        Nice case
+                        <span>0/7</span>
+                      </span>
+                    </label>
+                    <label>
+                      <input type="checkbox" hidden>
+                      <span>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-circle-thin"></i>
+                        Extra pack
+                        <span>3/4</span>
+                      </span>
+                    </label>
+                    <label>
+                      <input type="checkbox" disabled hidden>
+                      <span>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-circle-thin"></i>
+                        FullHD
+                        <span>0/13</span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filters-actions">
+                <button type="button" class="button-filter">Filter Selected</button>
+                <span class="on-sale">
+                  <i class="fa fa-percent"></i>
+                  Show only sale products
+                </span>
+                <span class="in-stock">
+                  <i class="fa fa-shopping-bag"></i>
+                  In stock only
+                </span>
+                <span class="clear-all">
+                  <i class="fa fa-repeat"></i>
+                  Clear all filters
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="category-products">
+            <div class="category-product-item">
+              <div class="product-item">
+                <div class="wish-or-compare">
+                  <span class="wish-item">
+                    <i class="fa fa-heart-o"></i>
+                  </span>
+                  <span class="compare-item">
+                    <i class="fa fa-bar-chart"></i>
+                  </span>
+                </div>
+                <div class="sale-item">-33%</div>
+                <div class="item-info">
+                  <figure class="product-picture">
+                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
+                  </figure>
+                  <a href="#" class="category-name">
+                    <span class="expired">Expired</span>
+                    Home Products
+                  </a>
+                  <h6 class="product-name">
+                    <i class="fa fa-fire"></i>
+                    <a href="#" title="Just Product">
+                      Canon Camera
+                    </a>
+                  </h6>
+                  <div class="product-rate" title="Rated 4.7 out of 5">
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                  </div>
+                  <div class="best-deal">Best deal at: <strong>BestBuy</strong></div>
+                  <ul class="product-params">
+                    <li><span>Camera:</span> 100500 megapixels</li>
+                  </ul>
+                </div>
+                <div class="product-additional-info">
+                  <div class="product-price">
+                    <div class="previous-price">$2000.99</div>
+                    <div class="current-price">$1999.99</div>
+                  </div>
+                  <div class="more">
+                    <a href="#">+ 4 more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="category-product-item">
+              <div class="product-item">
+                <div class="wish-or-compare">
+                  <span class="wish-item">
+                    <i class="fa fa-heart-o"></i>
+                  </span>
+                  <span class="compare-item">
+                    <i class="fa fa-bar-chart"></i>
+                  </span>
+                </div>
+                <div class="item-info">
+                  <figure class="product-picture">
+                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
+                  </figure>
+                  <a href="#" class="category-name">hiTech</a>
+                  <h6 class="product-name">
+                    <i class="fa fa-fire"></i>
+                    <a href="#" title="Just Product">
+                      Jat Pack
+                    </a>
+                  </h6>
+                  <div class="product-rate" title="Rated 5 out of 5">
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                  </div>
+                  <div class="best-deal">Best deal at: <strong>Metro</strong></div>
+                  <ul class="product-params">
+                    <li><span>Speed:</span> 140 km/H</li>
+                    <li><span>Weight:</span> 50 kg</li>
+                    <li><span>Max distance:</span> 100 km</li>
+                  </ul>
+                </div>
+                <div class="product-additional-info">
+                  <div class="product-price">
+                    <div class="current-price">$19999.99</div>
+                  </div>
+                  <div class="more">
+                    <a href="#">+ 1 more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="category-product-item">
+              <div class="product-item">
+                <div class="wish-or-compare">
+                  <span class="wish-item">
+                    <i class="fa fa-heart-o"></i>
+                  </span>
+                  <span class="compare-item">
+                    <i class="fa fa-bar-chart"></i>
+                  </span>
+                </div>
+                <div class="item-info">
+                  <figure class="product-picture">
+                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
+                  </figure>
+                  <a href="#" class="category-name">Different Products</a>
+                  <h6 class="product-name">
+                    <i class="fa fa-fire"></i>
+                    <a href="#" title="Just Product">
+                      Ibanez RG350 Guitar
+                    </a>
+                  </h6>
+                  <div class="product-rate" title="Rated 4.2 out of 5">
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star">★</span>
+                  </div>
+                  <div class="best-deal">Best deal at: <strong>MusicMaster</strong></div>
+                  <ul class="product-params">
+                    <li><span>Strings:</span> 6</li>
+                    <li><span>Neck:</span> Bolt on</li>
+                    <li><span>Wood:</span> Basswood</li>
+                    <li><span>Picks:</span> Simor Dunkan</li>
+                  </ul>
+                </div>
+                <div class="product-additional-info">
+                  <div class="product-price">
+                    <div class="current-price">$473.53</div>
+                  </div>
+                  <div class="more">
+                    <a href="#">+ 3 more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="category-product-item">
+              <div class="product-item">
+                <div class="wish-or-compare">
+                  <span class="wish-item">
+                    <i class="fa fa-heart-o"></i>
+                  </span>
+                  <span class="compare-item">
+                    <i class="fa fa-bar-chart"></i>
+                  </span>
+                </div>
+                <div class="item-info">
+                  <figure class="product-picture">
+                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
+                  </figure>
+                  <a href="#" class="category-name">
+                    <span class="expired">Expired</span>
+                    Products
+                  </a>
+                  <h6 class="product-name">
+                    <i class="fa fa-fire"></i>
+                    <a href="#" title="Just Product">
+                      Net
+                    </a>
+                  </h6>
+                  <div class="product-rate" title="Rated 3.75 out of 5">
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star">★</span>
+                  </div>
+                  <div class="best-deal">Best deal at: <strong>Ashan</strong></div>
+                  <ul class="product-params">
+                    <li><span>10</span> meters</li>
+                  </ul>
+                </div>
+                <div class="product-additional-info">
+                  <div class="product-price">
+                    <div class="current-price">$1.99</div>
+                  </div>
+                  <div class="more">
+                    <a href="#">+ 8 more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="category-product-item">
+              <div class="product-item">
+                <div class="wish-or-compare">
+                  <span class="wish-item">
+                    <i class="fa fa-heart-o"></i>
+                  </span>
+                  <span class="compare-item">
+                    <i class="fa fa-bar-chart"></i>
+                  </span>
+                </div>
+                <div class="item-info">
+                  <figure class="product-picture">
+                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
+                  </figure>
+                  <a href="#" class="category-name">Home Products</a>
+                  <h6 class="product-name">
+                    <i class="fa fa-fire"></i>
+                    <a href="#" title="Just Product">
+                      Canon Camera
+                    </a>
+                  </h6>
+                  <div class="product-rate" title="Rated 4.7 out of 5">
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                  </div>
+                  <div class="best-deal">Best deal at: <strong>BestBuy</strong></div>
+                  <ul class="product-params">
+                    <li>100500 megapixels</li>
+                  </ul>
+                </div>
+                <div class="product-additional-info">
+                  <div class="product-price">
+                    <div class="current-price">$1999.99</div>
+                  </div>
+                  <div class="more">
+                    <a href="#">+ 4 more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="category-product-item">
+              <div class="product-item">
+                <div class="wish-or-compare">
+                  <span class="wish-item">
+                    <i class="fa fa-heart-o"></i>
+                  </span>
+                  <span class="compare-item">
+                    <i class="fa fa-bar-chart"></i>
+                  </span>
+                </div>
+                <div class="item-info">
+                  <figure class="product-picture">
+                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
+                  </figure>
+                  <a href="#" class="category-name">Kids Products</a>
+                  <h6 class="product-name">
+                    <i class="fa fa-fire"></i>
+                    <a href="#" title="Just Product">
+                      Toy
+                    </a>
+                  </h6>
+                  <div class="product-rate" title="Rated 4.1 out of 5">
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star">★</span>
+                  </div>
+                  <div class="best-deal">Best deal at: <strong>Chicco</strong></div>
+                  <ul class="product-params">
+                    <li>Kids like it</li>
+                  </ul>
+                </div>
+                <div class="product-additional-info">
+                  <div class="product-price">
+                    <div class="current-price">$7.77</div>
+                  </div>
+                  <div class="more">
+                    <a href="#">+ 12 more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="category-product-item">
+              <div class="product-item">
+                <div class="wish-or-compare">
+                  <span class="wish-item">
+                    <i class="fa fa-heart-o"></i>
+                  </span>
+                  <span class="compare-item">
+                    <i class="fa fa-bar-chart"></i>
+                  </span>
+                </div>
+                <div class="sale-item">-42%</div>
+                <div class="item-info">
+                  <figure class="product-picture">
+                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
+                  </figure>
+                  <a href="#" class="category-name">
+                    <span class="expired">Expired</span>
+                    Men's Products
+                  </a>
+                  <h6 class="product-name">
+                    <i class="fa fa-fire"></i>
+                    <a href="#" title="Just Product">
+                      Gilette Blade
+                    </a>
+                  </h6>
+                  <div class="product-rate" title="Rated 5 out of 5">
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                  </div>
+                  <div class="best-deal">Best deal at: <strong>Watson's</strong></div>
+                  <ul class="product-params">
+                    <li><span>Best</span> for men</li>
+                  </ul>
+                </div>
+                <div class="product-additional-info">
+                  <div class="product-price">
+                    <div class="previous-price">$3.99</div>
+                    <div class="current-price">$2.39</div>
+                  </div>
+                  <div class="more">
+                    <a href="#">+ 17 more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="category-product-item">
+              <div class="product-item">
+                <div class="wish-or-compare">
+                  <span class="wish-item">
+                    <i class="fa fa-heart-o"></i>
+                  </span>
+                  <span class="compare-item">
+                    <i class="fa fa-bar-chart"></i>
+                  </span>
+                </div>
+                <div class="item-info">
+                  <figure class="product-picture">
+                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
+                  </figure>
+                  <a href="#" class="category-name">Home Products</a>
+                  <h6 class="product-name">
+                    <i class="fa fa-fire"></i>
+                    <a href="#" title="Just Product">
+                      Canon Camera
+                    </a>
+                  </h6>
+                  <div class="product-rate" title="Rated 4.7 out of 5">
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                  </div>
+                  <div class="best-deal">Best deal at: <strong>BestBuy</strong></div>
+                  <ul class="product-params">
+                    <li>100500 megapixels</li>
+                  </ul>
+                </div>
+                <div class="product-additional-info">
+                  <div class="product-price">
+                    <div class="current-price">$1999.99</div>
+                  </div>
+                  <div class="more">
+                    <a href="#">+ 4 more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="category-product-item">
+              <div class="product-item">
+                <div class="wish-or-compare">
+                  <span class="wish-item">
+                    <i class="fa fa-heart-o"></i>
+                  </span>
+                  <span class="compare-item">
+                    <i class="fa fa-bar-chart"></i>
+                  </span>
+                </div>
+                <div class="item-info">
+                  <figure class="product-picture">
+                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
+                  </figure>
+                  <a href="#" class="category-name">hiTech</a>
+                  <h6 class="product-name">
+                    <i class="fa fa-fire"></i>
+                    <a href="#" title="Just Product">
+                      Jat Pack
+                    </a>
+                  </h6>
+                  <div class="product-rate" title="Rated 5 out of 5">
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                  </div>
+                  <div class="best-deal">Best deal at: <strong>Metro</strong></div>
+                  <ul class="product-params">
+                    <li><span>Speed:</span> 140 km/H</li>
+                    <li><span>Weight:</span> 50 kg</li>
+                    <li><span>Max distance:</span> 100 km</li>
+                  </ul>
+                </div>
+                <div class="product-additional-info">
+                  <div class="product-price">
+                    <div class="current-price">$19999.99</div>
+                  </div>
+                  <div class="more">
+                    <a href="#">+ 1 more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="category-product-item">
+              <div class="product-item">
+                <div class="wish-or-compare">
+                  <span class="wish-item">
+                    <i class="fa fa-heart-o"></i>
+                  </span>
+                  <span class="compare-item">
+                    <i class="fa fa-bar-chart"></i>
+                  </span>
+                </div>
+                <div class="sale-item">-21%</div>
+                <div class="item-info">
+                  <figure class="product-picture">
+                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
+                  </figure>
+                  <a href="#" class="category-name">Different Products</a>
+                  <h6 class="product-name">
+                    <i class="fa fa-fire"></i>
+                    <a href="#" title="Just Product">
+                      Ibanez RG350 Guitar
+                    </a>
+                  </h6>
+                  <div class="product-rate" title="Rated 4.2 out of 5">
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star">★</span>
+                  </div>
+                  <div class="best-deal">Best deal at: <strong>MusicMaster</strong></div>
+                  <ul class="product-params">
+                    <li><span>Strings:</span> 6</li>
+                    <li><span>Neck:</span> Bolt on</li>
+                    <li><span>Wood:</span> Basswood</li>
+                    <li><span>Picks:</span> Simor Dunkan</li>
+                  </ul>
+                </div>
+                <div class="product-additional-info">
+                  <div class="product-price">
+                    <div class="previous-price">$525.55</div>
+                    <div class="current-price">$473.53</div>
+                  </div>
+                  <div class="more">
+                    <a href="#">+ 3 more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="category-product-item">
+              <div class="product-item">
+                <div class="wish-or-compare">
+                  <span class="wish-item">
+                    <i class="fa fa-heart-o"></i>
+                  </span>
+                  <span class="compare-item">
+                    <i class="fa fa-bar-chart"></i>
+                  </span>
+                </div>
+                <div class="item-info">
+                  <figure class="product-picture">
+                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
+                  </figure>
+                  <a href="#" class="category-name">
+                    <span class="expired">Expired</span>
+                    Home Products
+                  </a>
+                  <h6 class="product-name">
+                    <i class="fa fa-fire"></i>
+                    <a href="#" title="Just Product">
+                      Canon Camera
+                    </a>
+                  </h6>
+                  <div class="product-rate" title="Rated 4.7 out of 5">
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                  </div>
+                  <div class="best-deal">Best deal at: <strong>BestBuy</strong></div>
+                  <ul class="product-params">
+                    <li>100500 megapixels</li>
+                  </ul>
+                </div>
+                <div class="product-additional-info">
+                  <div class="product-price">
+                    <div class="current-price">$1999.99</div>
+                  </div>
+                  <div class="more">
+                    <a href="#">+ 4 more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="category-product-item">
+              <div class="product-item">
+                <div class="wish-or-compare">
+                  <span class="wish-item">
+                    <i class="fa fa-heart-o"></i>
+                  </span>
+                  <span class="compare-item">
+                    <i class="fa fa-bar-chart"></i>
+                  </span>
+                </div>
+                <div class="item-info">
+                  <figure class="product-picture">
+                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
+                  </figure>
+                  <a href="#" class="category-name">
+                    <span class="expired">Expired</span>
+                    Kitchen Products
+                  </a>
+                  <h6 class="product-name">
+                    <i class="fa fa-fire"></i>
+                    <a href="#" title="Just Product">
+                      Knife
+                    </a>
+                  </h6>
+                  <div class="product-rate" title="Rated 4.1 out of 5">
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star active">★</span>
+                    <span class="rate-star">★</span>
+                  </div>
+                  <div class="best-deal">Best deal at: <strong>Target</strong></div>
+                  <ul class="product-params">
+                    <li>Sharp</li>
+                  </ul>
+                </div>
+                <div class="product-additional-info">
+                  <div class="product-price">
+                    <div class="current-price">$4.50</div>
+                  </div>
+                  <div class="more">
+                    <a href="#">+ 14 more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside class="sidebar">
+          <div class="categories-nav">
+            <ul>
+              <li>
+                <input type="checkbox" id="categories-toggle" hidden>
+                <label class="category-item" for="categories-toggle">
+                  Show all categories
+                  <i class="fa fa-angle-down"></i>
+                </label>
+                <ul>
+                  <li>
+                    <a href="#" class="category-item">Other Products</a>
+                  </li>
+                  <li>
+                    <a href="#" class="category-item">Pets Products</a>
+                  </li>
+                  <li>
+                    <a href="#" class="category-item">Woman's Products</a>
+                  </li>
+                  <li>
+                    <a href="#" class="category-item">Men's Products</a>
+                  </li>
+                  <li>
+                    <a href="#" class="category-item">Sport's Products</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="category-item current">Best Products</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="content-wrapper">
+      <div class="footer-content">
+        <div class="footer-item">
+          <h5>About Us</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque autem beatae consequatur corporis dolor eius harum iusto modi
+            nam neque nulla quibusdam quos saepe sequi, suscipit tempore veritatis, voluptates?
+          </p>
+        </div>
+        <div class="footer-item">
+          <div class="footer-links">
+            <div class="footer-info">
+              <h5>For Customers</h5>
+              <a href="#">Product for review</a>
+              <a href="#"> Contact Us</a>
+              <a href="#">Best deals</a>
+              <a href="#">Catalog</a>
+            </div>
+            <div class="footer-info">
+              <h5>For Vendors</h5>
+              <a href="#">Testimonial</a>
+              <a href="#">How to use</a>
+              <a href="#">Donate Us</a>
+              <a href="#">Catalog</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-item">
+          <h5>Subscribe on Weekly Newsletter</h5>
+          <form>
+            <label for="news-email">Here text that definitely make you subscribe on our Weekly Newsletters! Because our newsletters are the
+              best newsletters in the world!</label>
+            <div class="newsletter-input">
+              <input type="email" id="news-email" placeholder="Email Address" required>
+              <button type="submit" class="newsletter-subscribe">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
