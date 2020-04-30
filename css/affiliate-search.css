@@ -1,0 +1,61 @@
+/* Affiliate Search Page */
+.affiliate-search {
+  height: 100vh;
+  width: 100%;
+  background: url('../assets/images/bg-compare-search.jpg') no-repeat center center;
+  background-size: 100% 100%;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+.affiliate-search .search-deal-holder {
+  max-width: 800px;
+  min-width: 800px;
+  margin: 14% auto auto;
+  text-align: center;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 22;
+}
+.search-deal-holder h2.heading {
+  color: #FFFFFF;
+  font-size: 60px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.search-deal-holder h2.sub-heading {
+  font-size: 16px;
+}
+.search-deal-holder .search-box {
+  padding-top: 66px;
+  display: flex;
+}
+.search-deal-holder .search-box label input {
+  font-family: Arial, Tahoma, sans-serif;
+  font-size: 21px;
+}
+.search-deal-holder .search-box button.search-button {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+section.partners {
+  text-align: center;
+  padding: 12px 0 ;
+}
+section.partners img {
+  display: block;
+  margin: 0 auto;
+}
+section.partners a.go-home {
+  display: inline-block;
+  color: #ff4136;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* CSS hack for IE-11 to set opacity instead of filter property on .effect-item */
+@media all and (-ms-high-contrast:none)
+{
+  *::-ms-backdrop, .affiliate-search .effect-item > div > div > div { opacity: .6 !important; } /* IE11 */
+}
