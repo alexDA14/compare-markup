@@ -132,10 +132,10 @@
               <div class="product-spec-info">
                 <div class="rating-circle">
                   <div class="rating-bg">
-                    <div class="fill-rate full">
+                    <div class="fill-rate" id="fill-full">
                       <div class="fill-out"></div>
                     </div>
-                    <div class="fill-rate half">
+                    <div class="fill-rate" id="fill-half">
                       <div class="fill-out"></div>
                       <div class="fill-out fixed"></div>
                     </div>
@@ -350,6 +350,10 @@
       document.body.classList.remove('scrolled');
     }
   }
+  setTimeout(function () {
+    document.getElementById('fill-full').classList.add('full');
+    document.getElementById('fill-half').classList.add('half');
+  });
 </script>
 </body>
 </html>
