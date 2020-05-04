@@ -322,7 +322,7 @@
     padding-top: 92px;
   }
   .filters-container .filters-title,
-  .category-content .main-content nav.breadcrumbs,
+  nav.breadcrumbs,
   .category-content .main-content h1.category-name {
     width: 100%;
     padding-bottom: 12px;
