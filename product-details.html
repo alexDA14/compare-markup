@@ -62,7 +62,23 @@
   </header>
   <header class="extra-header">
     <div class="content-wrapper">
-      <h2 style="text-align: center">Here will be extra-header element...</h2>
+      <div class="extra-product-picture">
+        <figure><img src="./assets/images/product-details-main.jpg" alt="Awesome Product"></figure>
+      </div>
+      <div class="extra-name-links">
+        <h2>Awesome Product</h2>
+        <div class="anchor-links">
+          <a href="#stores-prices">Prices</a>
+          <a href="#descriptions">Description</a>
+          <a href="#additional">Additional Information</a>
+          <a href="#videos">Videos</a>
+          <a href="#reviews-info">Reviews (0)</a>
+        </div>
+      </div>
+      <div class="price-offer">
+        <div class="extra-price">$1,100.00</div>
+        <a href="#stores-prices" class="button-choose">Choose offer</a>
+      </div>
     </div>
   </header>
   <section class="product-details">
@@ -164,7 +180,7 @@
                 <div class="rating-row">
                   <div class="rating-name">
                     <div class="rating-title">Price</div>
-                    <strong class="rating-value">5</strong>
+                    <strong class="rating-value">7</strong>
                   </div>
                   <div class="rating-list">
                     <ul><li>Integrated waterproof 4K camera with 2-axis</li></ul>
@@ -194,7 +210,7 @@
                 <div class="rating-row">
                   <div class="rating-name">
                     <div class="rating-title">Features</div>
-                    <strong class="rating-value">9.9</strong>
+                    <strong class="rating-value">8.9</strong>
                   </div>
                   <div class="rating-list">
                     <ul><li>Awesome features!</li></ul>
@@ -283,15 +299,335 @@
               <h5>One more Description title</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, eum, saepe? Autem blanditiis delectus dignissimos esse explicabo labore magni modi mollitia necessitatibus odit quas qui ratione repudiandae sunt, vel voluptatibus?</p>
               <div class="expert-score-description">
-              
+                <div class="expert-score-top">
+                  <div class="score-container">
+                    <div class="score-value">8.2</div>
+                    <div class="score-title">Expert score</div>
+                  </div>
+                  <ul>
+                    <li>Integrated waterproof 4K camera with 2-axis</li>
+                    <li>Performance and other very important options</li>
+                    <li>High performance product. Powered with Intel i7 core processor and GForce 100500(8Gb RAM) to make sure that this is very long description.</li>
+                    <li>Regular size product.</li>
+                    <li>With additional list item in the same row.</li>
+                  </ul>
+                </div>
+                <div class="score-bars">
+                  <div class="bar-item">
+                    <div class="score-name">
+                      <span>Price</span>
+                      <strong>7</strong>
+                    </div>
+                    <div class="bar-line-bg">
+                      <div style="width: 70%"></div>
+                    </div>
+                  </div>
+                  <div class="bar-item">
+                    <div class="score-name">
+                      <span>Performance and other very important options</span>
+                      <strong>9.3</strong>
+                    </div>
+                    <div class="bar-line-bg">
+                      <div style="width: 93%"></div>
+                    </div>
+                  </div>
+                  <div class="bar-item">
+                    <div class="score-name">
+                      <span>Sizes</span>
+                      <strong>7.7</strong>
+                    </div>
+                    <div class="bar-line-bg">
+                      <div style="width: 77%"></div>
+                    </div>
+                  </div>
+                  <div class="bar-item">
+                    <div class="score-name">
+                      <span>Features</span>
+                      <strong>8.9</strong>
+                    </div>
+                    <div class="bar-line-bg">
+                      <div style="width: 89%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="description-conclusion">
+                  <div class="product-positive">
+                    <h6>Pros</h6>
+                    <ul>
+                      <li>
+                        <i class="fa fa-check-circle"></i> Features
+                      </li>
+                      <li>
+                        <i class="fa fa-check-circle"></i> Performance
+                      </li>
+                      <li>
+                        <i class="fa fa-check-circle"></i> Durable Waterproof Frame and Motor
+                      </li>
+                      <li>
+                        <i class="fa fa-check-circle"></i> Integrated UltraHD 4K camera
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="product-negative">
+                    <h6>Cons</h6>
+                    <ul>
+                      <li>
+                        <i class="fa fa-minus-circle"></i> Overpriced
+                      </li>
+                      <li>
+                        <i class="fa fa-minus-circle"></i> It can be not easy to understand how it works
+                      </li>
+                      <li>
+                        <i class="fa fa-minus-circle"></i> Not good documentation
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          
-          <div class="details-block" id="reviews-info">
-          
+          <div class="details-block" id="additional">
+            <input type="checkbox" class="hide-details" id="additional-toggle" hidden>
+            <h4>
+              <i class="fa fa-sliders"></i>
+              Additional Information
+              <label class="details-toggle" for="additional-toggle">
+                <i class="fa fa-chevron-down"></i>
+              </label>
+            </h4>
+            <div class="details-toggle-content">
+              <h2 class="specification-title">
+                <i class="fa fa-sliders"></i> Specification: <span>Awesome Product</span>
+              </h2>
+              <table class="spec-table">
+                <tr>
+                  <td class="spec-name">Brand</td>
+                  <td class="spec-value"><a href="#">PineApple Industries</a></td>
+                </tr>
+                <tr>
+                  <td class="spec-name">Camera</td>
+                  <td class="spec-value"><a href="#">4k 60fps</a></td>
+                </tr>
+                <tr>
+                  <td class="spec-name">Maximum Work Time (min)</td>
+                  <td class="spec-value"><a href="#">44700</a></td>
+                </tr>
+                <tr>
+                  <td class="spec-name">Screen Resolution</td>
+                  <td class="spec-value"><a href="#">4k</a></td>
+                </tr>
+                <tr>
+                  <td class="spec-name">Audio Format</td>
+                  <td class="spec-value"><a href="#">FLAC</a></td>
+                </tr>
+              </table>
+            </div>
           </div>
-          
+          <div class="details-block" id="videos">
+            <input type="checkbox" class="hide-details" id="videos-toggle" checked hidden>
+            <h4>
+              <i class="fa fa-video-camera"></i>
+              Awesome Product Videos
+              <label class="details-toggle" for="videos-toggle">
+                <i class="fa fa-chevron-down"></i>
+              </label>
+            </h4>
+            <div class="details-toggle-content">
+              <h5 style="text-align: center">Videos will be here</h5>
+            </div>
+          </div>
+          <div class="details-block" id="reviews-info">
+            <input type="checkbox" class="hide-details" id="reviews-toggle" hidden>
+            <h4>
+              <i class="fa fa-star"></i>
+              Reviews (0)
+              <label class="details-toggle" for="reviews-toggle">
+                <i class="fa fa-chevron-down"></i>
+              </label>
+            </h4>
+            <div class="details-toggle-content">
+              <h2 class="reviews-title">
+                <i class="fa fa-star"></i> User Reviews
+              </h2>
+              <div class="user-reviews-container">
+                <div class="total-rate">
+                  0.0 <span>Out of 5</span>
+                </div>
+                <div class="rate-by-stars">
+                  <div class="stars-row">
+                    <div class="stars-amount">
+                      <span class="active">★</span>
+                      <span class="active">★</span>
+                      <span class="active">★</span>
+                      <span class="active">★</span>
+                      <span class="active">★</span>
+                    </div>
+                    <div class="rate-progress-line">
+                      <div class="progress-bg"></div>
+                    </div>
+                    <div class="rate-counter">0</div>
+                  </div>
+                  <div class="stars-row">
+                    <div class="stars-amount">
+                      <span class="active">★</span>
+                      <span class="active">★</span>
+                      <span class="active">★</span>
+                      <span class="active">★</span>
+                      <span>★</span>
+                    </div>
+                    <div class="rate-progress-line">
+                      <div class="progress-bg"></div>
+                    </div>
+                    <div class="rate-counter">0</div>
+                  </div>
+                  <div class="stars-row">
+                    <div class="stars-amount">
+                      <span class="active">★</span>
+                      <span class="active">★</span>
+                      <span class="active">★</span>
+                      <span>★</span>
+                      <span>★</span>
+                    </div>
+                    <div class="rate-progress-line">
+                      <div class="progress-bg"></div>
+                    </div>
+                    <div class="rate-counter">0</div>
+                  </div>
+                  <div class="stars-row">
+                    <div class="stars-amount">
+                      <span class="active">★</span>
+                      <span class="active">★</span>
+                      <span>★</span>
+                      <span>★</span>
+                      <span>★</span>
+                    </div>
+                    <div class="rate-progress-line">
+                      <div class="progress-bg"></div>
+                    </div>
+                    <div class="rate-counter">0</div>
+                  </div>
+                  <div class="stars-row">
+                    <div class="stars-amount">
+                      <span class="active">★</span>
+                      <span>★</span>
+                      <span>★</span>
+                      <span>★</span>
+                      <span>★</span>
+                    </div>
+                    <div class="rate-progress-line">
+                      <div class="progress-bg"></div>
+                    </div>
+                    <div class="rate-counter">0</div>
+                  </div>
+                </div>
+                <div class="write-review">
+                  <a href="#write-review" class="button-write-review">Write a Review</a>
+                </div>
+              </div>
+              <div class="no-reviews-info">
+                <span>There are no reviews yet.</span>
+                <strong>Be the first to review “Awesome Product”!</strong>
+              </div>
+              <div class="review-form-container" id="write-review">
+                <div class="form-note">Your email address will not be published. Required fields are marked *</div>
+                <div class="user-rate-selection">
+                  Your Rating
+                  <span class="stars-selection">
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                  </span>
+                </div>
+                <form class="review-form">
+                  <div class="review-comment">
+                    <label for="comment">Your Review *</label>
+                    <textarea id="comment" name="review-comment" cols="45" rows="8" required></textarea>
+                  </div>
+                  <div class="positive-negative-comment">
+                    <label>
+                      <textarea id="positive-side" name="positive-comment" cols="45" rows="8" placeholder="PROS:"></textarea>
+                    </label>
+                    <label>
+                      <textarea id="negative-side" name="negative-comment" cols="45" rows="8" placeholder="CONS:"></textarea>
+                    </label>
+                  </div>
+                  <div class="reviewer-info">
+                    <label for="reviewer-name">Your Name *</label>
+                    <input id="reviewer-name" name="reviewer-name" type="text" required>
+                    <label for="reviewer-email">Your Email *</label>
+                    <input id="reviewer-email" name="reviewer-email" type="email" required>
+                  </div>
+                  <div class="submit-action">
+                    <button type="submit" class="btn-submit-review">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="details-block" id="related-products">
+            <input type="checkbox" class="hide-details" id="related-products-toggle" hidden>
+            <h4>
+              <i class="fa fa-bars"></i>
+              Related Products
+              <label class="details-toggle" for="related-products-toggle">
+                <i class="fa fa-chevron-down"></i>
+              </label>
+            </h4>
+            <div class="details-toggle-content">
+              <div class="related-products-container">
+                <div class="related-product-holder">
+                  <div class="related-product">
+                    <figure>
+                      <a href="#"><img src="./assets/images/related-product-image.jpg" alt="Related Product"></a>
+                    </figure>
+                    <div class="related-product-info">
+                      <a href="#" class="related-product-name">Cool product</a>
+                      <span class="related-product-price">$999.99</span>
+                      <a href="#" class="related-compare"><i class="fa fa-line-chart"></i> Add to Compare</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="related-product-holder">
+                  <div class="related-product">
+                    <figure>
+                      <a href="#"><img src="./assets/images/related-product-image.jpg" alt="Related Product"></a>
+                    </figure>
+                    <div class="related-product-info">
+                      <a href="#" class="related-product-name">Nice product</a>
+                      <span class="related-product-price">$950.50</span>
+                      <a href="#" class="related-compare"><i class="fa fa-line-chart"></i> Add to Compare</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="related-product-holder">
+                  <div class="related-product">
+                    <figure>
+                      <a href="#"><img src="./assets/images/related-product-image.jpg" alt="Related Product"></a>
+                    </figure>
+                    <div class="related-product-info">
+                      <a href="#" class="related-product-name">Great product</a>
+                      <span class="related-product-price">$1000.01</span>
+                      <a href="#" class="related-compare"><i class="fa fa-line-chart"></i> Add to Compare</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="related-product-holder">
+                  <div class="related-product">
+                    <figure>
+                      <a href="#"><img src="./assets/images/related-product-image.jpg" alt="Related Product"></a>
+                    </figure>
+                    <div class="related-product-info">
+                      <a href="#" class="related-product-name">Amazing product</a>
+                      <span class="related-product-price">$1111.10</span>
+                      <a href="#" class="related-compare"><i class="fa fa-line-chart"></i> Add to Compare</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <aside class="sidebar">
         </aside>

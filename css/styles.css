@@ -63,7 +63,7 @@ ul {
   margin: 0;
 }
 
-input, button {
+input, button, textarea, select {
   outline: none;
 }
 input[hidden] {
