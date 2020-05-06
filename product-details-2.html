@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Product Details</title>
+  <title>Product Details - 2</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
   <link href="./css/styles.css" type="text/css" rel="stylesheet">
+  <link href="./css/product-list-item.css" type="text/css" rel="stylesheet">
   <link href="./css/product-details.css" type="text/css" rel="stylesheet">
+  <link href="./css/product-details-2.css" type="text/css" rel="stylesheet">
   <link href="./css/responsive-styles.css" type="text/css" rel="stylesheet">
 </head>
 <body>
@@ -44,8 +46,8 @@
               <ul class="sub-menu">
                 <li><a href="affiliate-search.html">Affiliate search</a></li>
                 <li><a href="product-category.html">Product Category</a></li>
-                <li><a href="#">Product Details</a></li>
-                <li><a href="product-details-2.html">Product Details - 2</a></li>
+                <li><a href="product-details.html">Product Details</a></li>
+                <li><a href="#">Product Details - 2</a></li>
                 <li><a href="#">Versus Page 2</a></li>
                 <li><a href="#">Top review List</a></li>
                 <li><a href="#">Price Range Page</a></li>
@@ -81,20 +83,50 @@
       </div>
     </div>
   </header>
+  <section class="product-top-container"
+           style="background-image: url('./assets/images/product-details-2-main.jpg')">
+    <div class="content-wrapper">
+      <nav class="breadcrumbs">
+        <a href="/">Home</a>
+        <i class="fa fa-angle-right separator"></i>
+        <a href="product-category.html" class="breadcrumbs-link">Best Products</a>
+        <i class="fa fa-angle-right separator"></i>
+        <span>Nice Product</span>
+      </nav>
+      <div class="top-prod-info">
+        <div class="prod-name">
+          <div class="category-info">
+            <a href="product-category.html">Best Products</a>
+            <span>-14%</span>
+          </div>
+          <h1>
+            <i class="fa fa-fire"></i>
+            <span>Nice Product</span>
+          </h1>
+          <div class="add-review">
+            <div class="customers-rate" title="Rated 3 of 5">
+              <span class="active">★</span>
+              <span class="active">★</span>
+              <span class="active">★</span>
+              <span>★</span>
+              <span>★</span>
+            </div>
+            <a href="#reviews-info">(2 Customer reviews)</a>
+          </div>
+        </div>
+        <div class="prod-pricing">
+          <span class="old-price">$311.00</span>
+          <span class="new-price">$286.44</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <section class="product-details">
     <div class="content-wrapper">
       <div class="details-content">
         <div class="main-content">
-          <div class="holder breadcrumbs-holder">
-            <div class="last-updated">Last price update was: May 3, 2020 5:56 pm <i class="fa fa-question-circle-o"></i></div>
-            <nav class="breadcrumbs">
-              <a href="/">Home</a>
-              <i class="fa fa-angle-right separator"></i>
-              <a href="product-category.html" class="breadcrumbs-link">Best Products</a>
-              <i class="fa fa-angle-right separator"></i>
-              <span>Awesome Product</span>
-            </nav>
-          </div>
+          
           <h1 class="product-name">
             <i class="fa fa-fire"></i>
             <span>Awesome Product</span>
@@ -628,55 +660,39 @@
               </div>
             </div>
           </div>
+          
         </div>
-        <aside class="sidebar" id="sticky-bar">
-          <div class="top-offers-holder">
-            <h2 class="heading">
-              <i class="fa fa-trophy"></i>
-              Top Offers
-            </h2>
-            <div class="top-offers">
-              <div class="offer-item">
-                <figure><a href="#"><img src="./assets/images/top-offer-image.jpg" alt="Top Offer"></a></figure>
-                <div class="name-prices">
-                  <a href="#" class="top-offer-name">Cool Product</a>
-                  <div class="price">900.00</div>
-                </div>
-              </div>
-              <div class="offer-item">
-                <figure><a href="#"><img src="./assets/images/top-offer-image.jpg" alt="Top Offer"></a></figure>
-                <div class="name-prices">
-                  <a href="#" class="top-offer-name">Great Product with very long name to test layout</a>
-                  <div class="price">23,057.50</div>
-                </div>
-              </div>
-              <div class="offer-item">
-                <figure><a href="#"><img src="./assets/images/top-offer-image.jpg" alt="Top Offer"></a></figure>
-                <div class="name-prices">
-                  <a href="#" class="top-offer-name">Discount Product</a>
-                  <div class="first-price">777.70</div>
-                  <div class="price">700.00</div>
-                </div>
-              </div>
-              <div class="offer-item">
-                <figure><a href="#"><img src="./assets/images/top-offer-image.jpg" alt="Top Offer"></a></figure>
-                <div class="name-prices">
-                  <a href="#" class="top-offer-name">Super Product</a>
-                  <div class="price">1,000.00</div>
-                </div>
-              </div>
-              <div class="offer-item">
-                <figure><a href="#"><img src="./assets/images/top-offer-image.jpg" alt="Top Offer"></a></figure>
-                <div class="name-prices">
-                  <a href="#" class="top-offer-name">More discounts Product</a>
-                  <div class="first-price">933.50</div>
-                  <div class="price">850.00</div>
-                </div>
-              </div>
+        <aside class="sidebar">
+          <div class="sidebar-suggestions">
+            <div class="buy-best">
+              <a href="https://www.amazon.com" class="button-best-buy" target="_blank">Buy with best price</a>
             </div>
-            <div class="coupon-use">
-              <span>Use Coupon:</span>
-              <a href="#">Reveal coupon</a>
+            <div class="suggestion-stores">
+              <a href="https://www.amazon.com" target="_blank">
+                <span class="store-picture">
+                  <img src="./assets/images/amazon-buy.gif" alt="Amazon">
+                </span>
+                <span class="store-suggestion">
+                  <span class="suggestion-price">
+                    <span class="store-price">$286.44</span>
+                    <span class="store-name">Amazon.com</span>
+                  </span>
+                  <i class="fa fa-chevron-circle-right"></i>
+                </span>
+              </a>
+              <a href="https://www.walmart.com" target="_blank">
+                <span class="store-picture">
+                  <img src="./assets/images/walmart-buy.png" width="49px" height="49px" alt="Walmart">
+                </span>
+                <span class="store-suggestion">
+                  <span class="suggestion-price">
+                    <span class="store-price">$332.99</span>
+                    <span class="store-name">walmart.com</span>
+                    <span class="stock-out">Out of stock</span>
+                  </span>
+                  <i class="fa fa-chevron-circle-right"></i>
+                </span>
+              </a>
             </div>
           </div>
         </aside>
@@ -733,11 +749,6 @@
       document.body.classList.add('scrolled');
     } else {
       document.body.classList.remove('scrolled');
-    }
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      document.getElementById('sticky-bar').classList.add('fix-bar');
-    } else {
-      document.getElementById('sticky-bar').classList.remove('fix-bar');
     }
   }
   setTimeout(function () {
