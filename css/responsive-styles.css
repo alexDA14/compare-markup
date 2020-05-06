@@ -72,7 +72,9 @@
     padding: 18px 18px 0;
   }
   .sidebar .top-offers-holder,
-  .details-content .sidebar.fix-bar .top-offers-holder {
+  .details-content .sidebar.fix-bar .top-offers-holder,
+  .details-content .sidebar .sidebar-holder,
+  .details-content .sidebar.fix-bar .sidebar-holder {
     position: static;
     top: initial;
     width: 100%;

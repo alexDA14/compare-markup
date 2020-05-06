@@ -145,7 +145,7 @@ header {
   background-color: #ff4136;
   height: 3px;
   width: 0;
-  transition: width .3s cubic-bezier(.5,0,.5,1);
+  transition: width .3s cubic-bezier(.5, 0, .5, 1);
 }
 .nav-container > li:hover::after {
   width: 100%;
