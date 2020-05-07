@@ -140,6 +140,7 @@ header.extra-header .content-wrapper .prod-pricing .new-price {
   width: 336px;
   position: fixed;
   top: 70px;
+  z-index: 9;
 }
 .details-content aside.sidebar .sidebar-suggestions {
   padding: 18px;
@@ -233,6 +234,9 @@ span.product-add-to button.add-to-button {
   color: #999999;
   letter-spacing: -0.5px;
 }
+.content-links-container a:last-of-type {
+  margin-right: 0;
+}
 .content-links-container a::before {
   position: absolute;
   display: block;
@@ -262,4 +266,55 @@ span.product-add-to button.add-to-button {
 .details-block .details-toggle-content {
   padding: 0 0 18px 0;
 }
-
+h2.specification-title i.fa {
+  color: #ff4136;
+}
+#additional h2.specification-title i.fa {
+  color: #000000;
+}
+.product-photos-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -8px;
+}
+.product-photos-container .photo-item {
+  padding: 8px;
+  flex-basis: 25%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.user-reviews-container .total-rate {
+  flex-direction: column;
+  align-items: center;
+}
+.total-rate .stars-amount {
+  display: flex;
+}
+.total-rate .stars-amount span {
+  font-size: 24px;
+  line-height: 1;
+  color: #e0dadf;
+}
+.total-rate .stars-amount span.active {
+  color: #ff8a00;
+}
+ form.review-form .submit-action button.btn-submit-review {
+  box-shadow: none;
+}
+.related-products-listing {
+  padding: 18px 12px;
+}
+.related-products-listing h3 {
+  font-size: 21px;
+  padding-bottom: 12px;
+}
+.related-products-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+}
+.related-products-list .related-product-item {
+  width: 20%;
+  padding: 0 12px 24px;
+}

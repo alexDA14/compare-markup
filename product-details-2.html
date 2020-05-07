@@ -13,7 +13,7 @@
   <link href="./css/responsive-styles.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-<div class="page-container">
+<div class="page-container details-wide">
   <header>
     <div class="content-wrapper">
       <div class="header-container">
@@ -134,7 +134,6 @@
             <a href="#photos">Photos</a>
             <a href="#reviews-info">Reviews (2)</a>
           </div>
-          
           <div class="details-block" id="descriptions">
             <div class="details-toggle-content">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, eum, saepe? Autem blanditiis delectus dignissimos esse explicabo labore magni modi mollitia necessitatibus odit quas qui ratione repudiandae sunt, vel voluptatibus?</p>
@@ -232,7 +231,6 @@
               </div>
             </div>
           </div>
-          
           <div class="details-block" id="additional">
             <div class="details-toggle-content">
               <h2 class="specification-title">
@@ -262,7 +260,6 @@
               </table>
             </div>
           </div>
-          
           <div class="details-block" id="videos">
             <h2 class="specification-title">
               <i class="fa fa-video-camera"></i>
@@ -272,21 +269,42 @@
               <h5 style="text-align: center">Videos will be here</h5>
             </div>
           </div>
-  
           <div class="details-block" id="photos">
             <h2 class="specification-title">
-              <i class="fa fa-bars"></i>
+              <i class="fa fa-picture-o"></i>
               Photos: <span>Nice Product</span>
             </h2>
             <div class="details-toggle-content">
               <div class="product-photos-container">
               
-              
-              
+                <div class="photo-item">
+                  <a href="assets/images/product-image-large.jpg" target="_blank">
+                    <img src="./assets/images/product-image-large.jpg" alt="Nice Product">
+                  </a>
+                </div>
+                <div class="photo-item">
+                  <a href="assets/images/product-image-large.jpg" target="_blank">
+                    <img src="./assets/images/product-image-large.jpg" alt="Nice Product">
+                  </a>
+                </div>
+                <div class="photo-item">
+                  <a href="assets/images/product-image-large.jpg" target="_blank">
+                    <img src="./assets/images/product-image-large.jpg" alt="Nice Product">
+                  </a>
+                </div>
+                <div class="photo-item">
+                  <a href="assets/images/product-image-large.jpg" target="_blank">
+                    <img src="./assets/images/product-image-large.jpg" alt="Nice Product">
+                  </a>
+                </div>
+                <div class="photo-item">
+                  <a href="assets/images/product-image-large.jpg" target="_blank">
+                    <img src="./assets/images/product-image-large.jpg" alt="Nice Product">
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-          
           <div class="details-block" id="reviews-info">
             <h2 class="specification-title">
               <i class="fa fa-star"></i>
@@ -295,7 +313,14 @@
             <div class="details-toggle-content">
               <div class="user-reviews-container">
                 <div class="total-rate">
-                  0.0 <span>Out of 5</span>
+                  <div class="total-rate-value">3.0 <span>Out of 5</span></div>
+                  <div class="stars-amount">
+                    <span class="active">★</span>
+                    <span class="active">★</span>
+                    <span class="active">★</span>
+                    <span>★</span>
+                    <span>★</span>
+                  </div>
                 </div>
                 <div class="rate-by-stars">
                   <div class="stars-row">
@@ -307,9 +332,9 @@
                       <span class="active">★</span>
                     </div>
                     <div class="rate-progress-line">
-                      <div class="progress-bg"></div>
+                      <div class="progress-bg"><div style="width: 50%"></div></div>
                     </div>
-                    <div class="rate-counter">0</div>
+                    <div class="rate-counter">1</div>
                   </div>
                   <div class="stars-row">
                     <div class="stars-amount">
@@ -359,18 +384,74 @@
                       <span>★</span>
                     </div>
                     <div class="rate-progress-line">
-                      <div class="progress-bg"></div>
+                      <div class="progress-bg"><div style="width: 50%"></div></div>
                     </div>
-                    <div class="rate-counter">0</div>
+                    <div class="rate-counter">1</div>
                   </div>
                 </div>
                 <div class="write-review">
                   <a href="#write-review" class="button-write-review">Write a Review</a>
                 </div>
               </div>
-              <div class="no-reviews-info">
-                <span>There are no reviews yet.</span>
-                <strong>Be the first to review “Awesome Product”!</strong>
+              <div class="users-reviews-list">
+                <div class="reviews-tabs-headings">
+                  <span class="active-tab">Show All</span>
+                  <span>Most Helpful</span>
+                  <span>Highest Rating</span>
+                  <span>Lowest Rating</span>
+                </div>
+                <div class="reviews-tab-container">
+                  <div class="user-review-item">
+                    <div class="user-avatar">
+                      <img src="./assets/images/no-avatar.png" alt="Username">
+                    </div>
+                    <div class="review-details">
+                      <div class="user-rate">
+                        <span class="active">★</span>
+                        <span class="active">★</span>
+                        <span class="active">★</span>
+                        <span class="active">★</span>
+                        <span class="active">★</span>
+                      </div>
+                      <div class="username-time">
+                        <strong>Jack White</strong> - May 4, 2020
+                      </div>
+                      <div class="user-rate-comment">
+                        I'm gonna fight 'em all<br>
+                        A seven nation army couldn't hold me back...
+                      </div>
+                      <div class="rate-user-review">
+                        <a href="#" class="helpful-review"><i class="fa fa-thumbs-o-up"></i> helpful(2)</a>
+                        <a href="#" class="unhelpful-review"><i class="fa fa-thumbs-o-down"></i> unhelpful(3)</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="user-review-item">
+                    <div class="user-avatar">
+                      <img src="./assets/images/no-avatar.png" alt="Username">
+                    </div>
+                    <div class="review-details">
+                      <div class="user-rate">
+                        <span class="active">★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                      </div>
+                      <div class="username-time">
+                        <strong>Jack Black</strong> - February 29, 2020
+                      </div>
+                      <div class="user-rate-comment">
+                        This is not The Greatest Song in the World, no.<br>
+                        This is just a tribute...
+                      </div>
+                      <div class="rate-user-review">
+                        <a href="#" class="helpful-review"><i class="fa fa-thumbs-o-up"></i> helpful(1)</a>
+                        <a href="#" class="unhelpful-review"><i class="fa fa-thumbs-o-down"></i> unhelpful(1)</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="review-form-container" id="write-review">
                 <div class="form-note">Your email address will not be published. Required fields are marked *</div>
@@ -410,9 +491,7 @@
               </div>
             </div>
           </div>
-          
         </div>
-        
         <aside class="sidebar" id="sticky-bar">
           <div class="sidebar-holder">
             <div class="sidebar-suggestions">
@@ -467,6 +546,150 @@
             </div>
           </div>
         </aside>
+      </div>
+      <div class="related-products-listing">
+        <h3>Related Products</h3>
+        <div class="related-products-list">
+          <div class="related-product-item">
+            <div class="product-item">
+              <div class="wish-or-compare">
+                  <span class="wish-item">
+                    <i class="fa fa-heart-o"></i>
+                  </span>
+                <span class="compare-item">
+                    <i class="fa fa-bar-chart"></i>
+                  </span>
+              </div>
+              <div class="sale-item">-33%</div>
+              <div class="item-info">
+                <figure class="product-picture">
+                  <a href="product-details.html" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
+                </figure>
+                <a href="#" class="category-name">
+                  <span class="expired">Expired</span>
+                  Home Products
+                </a>
+                <h6 class="product-name">
+                  <i class="fa fa-fire"></i>
+                  <a href="product-details.html" title="Just Product">
+                    Canon Camera
+                  </a>
+                </h6>
+                <div class="product-rate" title="Rated 4.7 out of 5">
+                  <span class="rate-star active">★</span>
+                  <span class="rate-star active">★</span>
+                  <span class="rate-star active">★</span>
+                  <span class="rate-star active">★</span>
+                  <span class="rate-star active">★</span>
+                </div>
+                <div class="best-deal">Best deal at: <strong>BestBuy</strong></div>
+                <ul class="product-params">
+                  <li><span>Camera:</span> 100500 megapixels</li>
+                </ul>
+              </div>
+              <div class="product-additional-info">
+                <div class="product-price">
+                  <div class="previous-price">$2000.99</div>
+                  <div class="current-price">$1999.99</div>
+                </div>
+                <div class="more">
+                  <a href="#">+ 4 more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="related-product-item">
+            <div class="product-item">
+              <div class="wish-or-compare">
+                  <span class="wish-item">
+                    <i class="fa fa-heart-o"></i>
+                  </span>
+                <span class="compare-item">
+                    <i class="fa fa-bar-chart"></i>
+                  </span>
+              </div>
+              <div class="item-info">
+                <figure class="product-picture">
+                  <a href="product-details.html" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
+                </figure>
+                <a href="#" class="category-name">hiTech</a>
+                <h6 class="product-name">
+                  <i class="fa fa-fire"></i>
+                  <a href="product-details.html" title="Just Product">
+                    Jat Pack
+                  </a>
+                </h6>
+                <div class="product-rate" title="Rated 5 out of 5">
+                  <span class="rate-star active">★</span>
+                  <span class="rate-star active">★</span>
+                  <span class="rate-star active">★</span>
+                  <span class="rate-star active">★</span>
+                  <span class="rate-star active">★</span>
+                </div>
+                <div class="best-deal">Best deal at: <strong>Metro</strong></div>
+                <ul class="product-params">
+                  <li><span>Speed:</span> 140 km/H</li>
+                  <li><span>Weight:</span> 50 kg</li>
+                  <li><span>Max distance:</span> 100 km</li>
+                </ul>
+              </div>
+              <div class="product-additional-info">
+                <div class="product-price">
+                  <div class="current-price">$19999.99</div>
+                </div>
+                <div class="more">
+                  <a href="#">+ 1 more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="related-product-item">
+            <div class="product-item">
+              <div class="wish-or-compare">
+                  <span class="wish-item">
+                    <i class="fa fa-heart-o"></i>
+                  </span>
+                <span class="compare-item">
+                    <i class="fa fa-bar-chart"></i>
+                  </span>
+              </div>
+              <div class="item-info">
+                <figure class="product-picture">
+                  <a href="product-details.html" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
+                </figure>
+                <a href="#" class="category-name">Different Products</a>
+                <h6 class="product-name">
+                  <i class="fa fa-fire"></i>
+                  <a href="product-details.html" title="Just Product">
+                    Ibanez RG350 Guitar
+                  </a>
+                </h6>
+                <div class="product-rate" title="Rated 4.2 out of 5">
+                  <span class="rate-star active">★</span>
+                  <span class="rate-star active">★</span>
+                  <span class="rate-star active">★</span>
+                  <span class="rate-star active">★</span>
+                  <span class="rate-star">★</span>
+                </div>
+                <div class="best-deal">Best deal at: <strong>MusicMaster</strong></div>
+                <ul class="product-params">
+                  <li><span>Strings:</span> 6</li>
+                  <li><span>Neck:</span> Bolt on</li>
+                  <li><span>Wood:</span> Basswood</li>
+                  <li><span>Picks:</span> Simor Dunkan</li>
+                </ul>
+              </div>
+              <div class="product-additional-info">
+                <div class="product-price">
+                  <div class="current-price">$473.53</div>
+                </div>
+                <div class="more">
+                  <a href="#">+ 3 more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>

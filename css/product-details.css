@@ -800,12 +800,14 @@ h2.reviews-title i {
   justify-content: space-between;
   padding: 6px 0;
 }
-.stars-row .stars-amount span {
+.stars-row .stars-amount span,
+.review-details .user-rate span {
   font-size: 20px;
   line-height: 19px;
   color: #e0dadf;
 }
-.stars-row .stars-amount span.active {
+.stars-row .stars-amount span.active,
+.review-details .user-rate span.active {
   color: #ff8a00;
 }
 .stars-row .rate-progress-line {
@@ -839,6 +841,91 @@ h2.reviews-title i {
 .no-reviews-info strong {
   font-size: 18px;
   padding-top: 18px;
+}
+.users-reviews-list {
+  padding: 18px 0;
+}
+.users-reviews-list .reviews-tabs-headings {
+  display: flex;
+  padding-bottom: 18px;
+}
+.users-reviews-list .reviews-tabs-headings span {
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 3px;
+}
+.users-reviews-list .reviews-tabs-headings span:last-of-type {
+  margin-right: 0;
+}
+.users-reviews-list .reviews-tabs-headings span.active-tab,
+.users-reviews-list .reviews-tabs-headings span:hover {
+  background-color: #EEEEEE;
+}
+.reviews-tab-container .user-review-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 18px;
+  border: 1px solid #EEEEEE;
+  padding: 12px;
+}
+.user-review-item .user-avatar {
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+  padding: 3px;
+  background-color: #f7f6f7;
+  border: 1px solid #f0eef0;
+  border-radius: 50%;
+}
+.user-review-item .user-avatar img {
+  border-radius: 50%;
+}
+.user-review-item .review-details {
+  flex-grow: 1;
+  padding-left: 12px;
+}
+.review-details .username-time {
+  padding: 12px 0;
+  font-size: 12px;
+  color: #777777;
+  text-transform: uppercase;
+}
+.review-details .user-rate-comment {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #EEEEEE;
+  margin-bottom: 12px;
+}
+.review-details .rate-user-review {
+  display: flex;
+  align-items: center;
+}
+.rate-user-review a {
+  font-family: Arial, Tahoma, sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 3px 6px;
+  transition: background-color .3s linear, color .6s ease;
+}
+.rate-user-review a.helpful-review {
+  margin-right: 12px;
+}
+.rate-user-review a.helpful-review i {
+  color: #5cbd00;
+}
+.rate-user-review a.helpful-review:hover {
+  background-color: #5cbd00;
+  color: #FFFFFF;
+}
+.rate-user-review a.unhelpful-review i {
+  color: #cc0000;
+}
+.rate-user-review a.unhelpful-review:hover {
+  background-color: #cc0000;
+  color: #FFFFFF;
+}
+.rate-user-review a:hover i {
+  color: #FFFFFF;
 }
 .review-form-container .form-note {
   font-size: 14px;
