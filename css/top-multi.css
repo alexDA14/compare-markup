@@ -1,0 +1,136 @@
+/* Styles for the "Top Multi" page */
+footer .newsletter-input button.newsletter-subscribe {
+  background-color: #ff4136;
+}
+.top-ten-products {
+  background: url('../assets/images/multi-top-bg.jpg') no-repeat center center;
+  overflow: hidden;
+  transition: background .3s ease;
+  padding: 90px 0 0;
+}
+.top-ten-holder {
+  display: flex;
+}
+.top-headings,
+.top-banner {
+  width: 50%;
+}
+.top-headings {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 12px;
+}
+.top-headings .top-info {
+  background-color: #FFFFFF;
+  font-size: 32px;
+  border-bottom: 9px solid #CCCCCC;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  line-height: 48px;
+}
+.top-headings .top-info i {
+  color: #ff003f;
+  font-size: 24px;
+  margin-right: 6px;
+}
+.top-headings .top-info.type-product {
+  margin-left: 0;
+  font-size: 45px;
+  font-weight: 700;
+  color: #ff003f;
+  padding: 6px 12px;
+}
+.top-headings .top-info.sub-title {
+  margin-left: 40px;
+  font-size: 31px;
+}
+section.product-listing {
+  padding-top: 42px;
+}
+.product-listing .content-wrapper {
+  padding: 0 12px;
+}
+.top-products-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+}
+.top-products-list .top-item {
+  width: 20%;
+  padding: 0 12px 24px;
+}
+section.top-text {
+  background: url('../assets/images/multi-middle-bg.jpg') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 100px 0 120px;
+  position: relative;
+}
+section.top-text .bottom-lines {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: rotateX(180deg);
+}
+section.top-text .bottom-lines svg {
+  height: 53px;
+  width: 100%;
+}
+section.top-text h2 {
+  font-size: 42px;
+  color: #FFFFFF;
+  padding-bottom: 24px;
+}
+section.top-text h3 {
+  color: #fff9db;
+  font-size: 21px;
+  font-weight: 400;
+}
+.line-charts-container {
+  padding: 30px 60px;
+}
+.line-charts-container .line-chart {
+  padding-bottom: 18px;
+}
+.line-chart h3 {
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+.line-chart .line {
+  height: 28px;
+  width: 100%;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+  background-color: #cdcdcd;
+  margin-bottom: 12px;
+}
+.line-chart .line .line-value {
+  position: relative;
+  color: #FFFFFF;
+  font-weight: 700;
+  z-index: 2;
+  padding-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+.line-chart .line > div:not(.line-value) {
+  position: absolute;
+  height: 100%;
+  background-color: #AAAAAA;
+  border-radius: 3px;
+  z-index: 1;
+}
+.line-chart .line.orange-line > div:not(.line-value) {
+  background-color: #f07a00;
+}
+.charts-description {
+  font-size: 16px;
+  padding-top: 12px;
+}

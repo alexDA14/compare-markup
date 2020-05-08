@@ -45,6 +45,12 @@
   opacity: .7;
   cursor: pointer;
 }
+.product-item .wish-or-compare .wish-item {
+  padding-bottom: 3px;
+}
+.product-item .wish-or-compare .compare-item {
+  padding-top: 3px;
+}
 .product-item .wish-or-compare .wish-item:hover {
   color: #c00;
   opacity: 1;
@@ -59,7 +65,7 @@
 }
 .item-info figure.product-picture {
   align-self: center;
-  margin-bottom: 12px;
+  margin: 12px 0;
   text-align: center;
   width: 100%;
 }

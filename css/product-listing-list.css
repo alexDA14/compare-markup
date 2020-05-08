@@ -143,4 +143,8 @@ footer .newsletter-input button.newsletter-subscribe {
 .item-price-action .go-to-reviews {
   font-size: 11px;
   color: #ff4136;
+  transition: color .3s ease-in-out;
+}
+.item-price-action .go-to-reviews:hover {
+  color: #111111;
 }
