@@ -137,6 +137,9 @@
   .related-products-listing {
     padding: 18px;
   }
+  .product-listing-content {
+    padding: 12px 24px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -358,6 +361,21 @@
   }
   .details-wide .related-products-list .related-product-item {
     width: 33%;
+  }
+  .product-listing-content .listing-list-item {
+    flex-direction: column;
+  }
+  .listing-list-item figure {
+    margin: 0 0 12px 0;
+  }
+  .item-details, .item-additional-info {
+    padding: 0 0 12px 0;
+    text-align: center;
+    width: 100%;
+  }
+  .item-price-action {
+    max-width: 100%;
+    padding: 0;
   }
 }
 

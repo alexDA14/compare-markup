@@ -78,6 +78,9 @@ button {
   cursor: pointer;
   background-color: transparent;
 }
+.text-center {
+  text-align: center;
+}
 
 /* page containers styles */
 .page-container {
