@@ -485,7 +485,7 @@
   }
   .details-block .details-toggle-content,
   .details-block h4,
-  .details-block .details-toggle-content .expert-score-description {
+  .expert-score-description {
     padding: 12px;
   }
   .details-wide .details-block .details-toggle-content {
