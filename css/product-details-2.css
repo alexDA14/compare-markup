@@ -154,56 +154,6 @@ header.extra-header .content-wrapper .prod-pricing .new-price {
   display: block;
   text-align: center;
 }
-.sidebar-suggestions .suggestion-stores a {
-  display: flex;
-  border: 1px solid #DDDDDD;
-  border-radius: 100px;
-  margin-bottom: 12px;
-}
-.sidebar-suggestions .suggestion-stores a:hover {
-  box-shadow: 0 3px 0 1px #ddd;
-}
-.suggestion-stores a > span {
-  width: 50%;
-  display: inline-flex;
-  align-items: center;
-  padding: 8px 12px;
-}
-.suggestion-stores a span.store-picture {
-  border-right: 1px solid #DDDDDD;
-  justify-content: center;
-}
-.suggestion-stores a span.store-suggestion {
-  justify-content: space-between;
-}
-span.store-suggestion .suggestion-price {
-  display: inline-flex;
-  flex-direction: column;
-  color: #111111;
-}
-.suggestion-price .store-price {
-  font-weight: 700;
-}
-.suggestion-price .store-name,
-.suggestion-price .stock-out {
-  color: #999999;
-  font-family: Arial, Tahoma, sans-serif;
-  font-size: 12px;
-  font-style: italic;
-}
-.suggestion-price .stock-out {
-  color: #ff4136;
-  font-weight: bold;
-  margin-top: 3px;
-  font-style: normal;
-}
-span.store-suggestion i.fa {
-  color: #ff4136;
-  font-size: 20px;
-}
-.suggestion-stores a:hover span.store-suggestion i.fa {
-  color: #0C0C0C;
-}
 .details-content aside.sidebar .sidebar-socials {
   padding: 18px;
   border: 1px solid #dce0e0;
