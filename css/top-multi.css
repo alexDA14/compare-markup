@@ -290,7 +290,7 @@ a.offer-store img {
   padding: 18px 0;
 }
 .winner-alert-form form label {
-  flex-basis: 33%;
+  width: 33%;
 }
 .winner-alert-form form label input {
   padding: 9px 10px;
@@ -301,12 +301,13 @@ a.offer-store img {
   font-size: 15px;
   line-height: 18px;
   transition: border-color .4s ease;
+  width: 100%;
 }
 .winner-alert-form form label input:focus {
   border-color: #444;
 }
 .winner-alert-form form button {
-  flex-basis: 25%;
+  width: 25%;
   box-shadow: 0 18px 38px 0 rgba(0, 0, 0, .06), 0 8px 40px 0 rgba(0, 0, 0, .06);
   background-color: #ff4136;
   color: #FFFFFF;
