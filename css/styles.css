@@ -846,12 +846,18 @@ section.top-text h3 {
 .line-chart .line.blue-line > div:not(.line-value) {
   background-color: #4054b2;
 }
+.line-chart .line.purple-line > div:not(.line-value) {
+  background-color: #7800db;
+}
 .charts-description {
   font-size: 16px;
   padding-top: 12px;
 }
 .item-25 {
   width: 25%;
+}
+.item-33 {
+  width: 33.3%;
 }
 .set-top-alert {
   text-align: right;
@@ -904,4 +910,52 @@ a.offer-store img {
   font-weight: 700;
   text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
   padding: 5px 12px;
+}
+.versus-comparing .versus-vs {
+  border-radius: 50%;
+  font-weight: 700;
+  font-family: Arial, Tahoma, sans-serif;
+  font-size: 16px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  background: #e9e9e9;
+  margin: 0 10px;
+  color: #111;
+}
+.versus-comparing .compare-winner,
+.versus-comparing .compare-looser {
+  width: 63px;
+  text-align: center;
+  font-weight: 700;
+}
+.versus-comparing .compare-winner {
+  color: #4fb200;
+}
+.versus-comparing .compare-winner.versus-icon {
+  font-size: 25px;
+}
+.versus-comparing .compare-looser {
+  color: #b5b5b5;
+}
+.versus-comparing .compare-looser.versus-icon {
+  font-size: 22px;
+  color: #c00;
+}
+.versus-specifications .content-wrapper {
+  max-width: 800px;
+  padding-top: 30px;
+  font-size: 16px;
+}
+.versus-specifications p {
+  padding-bottom: 12px;
+  line-height: 28px;
+}
+.versus-specifications h2 {
+  padding-bottom: 18px;
+  padding-top: 12px;
+}
+.versus-specifications h3 {
+  padding: 12px 0;
 }

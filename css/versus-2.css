@@ -1,0 +1,308 @@
+/* Styles for the "Versus 2" page */
+body, h1, h2, h3, h4, h5, h6, body * {
+  font-family: 'Poppins', 'Trebuchet MS', sans-serif;
+}
+footer {
+  background: #000000;
+}
+footer .newsletter-input input,
+.newsletter-input button.newsletter-subscribe {
+  padding: 10px;
+}
+footer.bottom-footer {
+  background: #222222;
+  color: #F1F1F1;
+  font-size: 13px;
+  padding: 18px;
+}
+.page-container.no-header {
+  padding-top: 0;
+}
+section.top-text.top-versus {
+  background: url('../assets/images/vs-bg-fire.jpg') no-repeat center center;
+  padding: 30px 0 80px;
+  text-align: left;
+}
+section.top-text .bottom-lines svg {
+  height: 37px;
+}
+.top-versus-holder {
+  display: flex;
+}
+.top-versus-holder .item-33 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+.top-versus-holder .item-33 h6 {
+  font-size: 33px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.item-33 .short-description {
+  font-size: 16px;
+  color: #afafaf;
+  margin: 6px 0 18px;
+}
+.item-33 figure {
+  margin-bottom: 12px;
+}
+.top-versus-holder .item-33:first-of-type {
+  align-items: flex-start;
+}
+.top-versus-holder .item-33:last-of-type {
+  align-items: flex-end;
+  text-align: right;
+}
+.top-versus-holder .item-33:last-of-type figure {
+  order: 3;
+  margin: 66px 0 0 0;
+}
+.item-33.versus-vs {
+  justify-content: center;
+  color: #FFFFFF;
+  font-size: 130px;
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+}
+.item-33.versus-vs .vs-slash {
+  color: #ff003f;
+  position: absolute;
+  top: -6px;
+  pointer-events: none;
+  left: 0;
+  right: 0;
+  width: 50px;
+  margin: auto;
+  font-size: 132px;
+  font-weight: 400;
+}
+.deal-score-container {
+  display: flex;
+  justify-content: center;
+}
+.deal-score-container .score-counter {
+  display: flex;
+  height: 32px;
+  font-size: 14px;
+  background: #96ca4e;
+  line-height: 32px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+.score-counter div:not(.count) {
+  padding: 0 12px;
+  color: #fff;
+  font-weight: 700;
+}
+.score-counter div.count {
+  width: auto;
+  min-width: 50px;
+  font-size: 18px;
+  background: #daecc2;
+  padding: 0 5px;
+  color: #333333;
+  border-radius: 0 4px 4px 0;
+}
+.deal-score-container .like-container,
+.deal-score-container .dislike-container {
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  background-color: #fff;
+  border: 1px solid #dcddde;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color .3s ease-out, color .2s ease-in;
+}
+.deal-score-container .like-container {
+  color: #67a827;
+  margin-right: 8px;
+}
+.deal-score-container .dislike-container {
+  color: #cc0000;
+}
+.deal-score-container .like-container:hover {
+  background-color: #67a827;
+  border-color: #67a827;
+  color: #FFFFFF;
+}
+.deal-score-container .dislike-container:hover {
+  background-color: #cc0000;
+  border-color: #cc0000;
+  color: #FFFFFF;
+}
+section.comparing-section .content-wrapper h3 {
+  text-align: center;
+  font-size: 21px;
+  padding: 24px 0 18px;
+}
+.comparing-holder {
+  padding: 30px 0;
+  display: flex;
+}
+.comparing-holder .comparing-image {
+  width: 20%;
+  text-align: center;
+}
+.comparing-holder .products-compare-container {
+  width: 60%;
+  padding: 0 18px;
+}
+.comparing-image figure {
+  margin-bottom: 18px;
+}
+.comparing-image span.choose-your {
+  display: inline-block;
+  color: #fff;
+  background-color: #f20800;
+  border-radius: 5px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.products-compare-container .versus-row {
+  padding: 6px;
+  display: flex;
+  align-items: flex-start;
+}
+.products-compare-container .versus-row.products-row {
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  margin-bottom: 6px;
+}
+.versus-row .versus-title {
+  width: 40%;
+  padding: 0 10px;
+  line-height: 28px;
+}
+.versus-title .vs-names {
+  font-size: 17px;
+  font-weight: 700;
+}
+.versus-title .versus-subtitle {
+  font-size: 13px;
+  opacity: .5;
+}
+.versus-row .versus-comparing {
+  flex-grow: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.versus-comparing figure {
+  width: 66px;
+  height: 66px;
+  display: inline-flex;
+  align-items: center;
+}
+.versus-comparing .compare-winner,
+.versus-comparing .compare-looser {
+  width: 66px;
+}
+.versus-specifications p {
+  margin-bottom: 12px;
+}
+.versus-specifications h3 {
+  margin-bottom: 0;
+}
+.versus-specifications .line-chart {
+  margin: 12px 0;
+}
+.line-chart .line .line-value {
+  font-weight: 400;
+  justify-content: space-between;
+  padding-left: 12px;
+}
+section.top-text:not(.top-versus) {
+  background-color: transparent;
+  background-image: linear-gradient(180deg,#7000f4 0%,#8010a3 100%);
+  transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+section.top-text svg.top-waves-svg,
+section.top-text svg.bottom-shape {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: -1px;
+  width: 100%;
+  height: 31px;
+}
+section.top-text svg.bottom-shape {
+  top: auto;
+  bottom: -1px;
+  height: 102px;
+  transform: rotateX(180deg);
+}
+.versus-specifications p.holder span {
+  float: left;
+  font-size: 50px;
+  line-height: 42px;
+  margin-right: 8px;
+}
+section.banner-section {
+  text-align: center;
+  padding: 12px;
+}
+.vs-suggestions {
+  display: flex;
+  padding: 12px 0;
+}
+.vs-suggestions .suggestion-stores {
+  width: 50% ;
+  padding: 12px;
+  flex-direction: column;
+}
+.vs-suggestions .suggestion-stores h4 {
+  font-size: 21px;
+  color: #8ae26a;
+  padding-bottom: 18px;
+  line-height: 42px;
+}
+.suggestion-stores a {
+  background-color: #FFFFFF;
+}
+span.store-suggestion i.fa,
+.suggestion-price .stock-out {
+  color: #7000f4;
+}
+.versus-specifications h2.why-buy-heading {
+  font-size: 45px;
+  padding-bottom: 24px;
+  padding-top: 0;
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.why-buy-container {
+  display: flex;
+  padding-bottom: 30px;
+}
+.why-buy-container .why-buy-product {
+  width: 50%;
+}
+.why-buy-product h3 {
+  display: flex;
+  align-items: center;
+  font-size: 21px;
+  padding: 0 0 18px 0;
+}
+.why-buy-product h3 i {
+  color: #00ce1b;
+  font-size: 36px;
+  margin-right: 12px;
+}
+.why-buy-product ul li {
+  display: flex;
+  align-items: center;
+  padding-bottom: 8px;
+}
+.why-buy-product ul li i {
+  font-size: 14px;
+  margin-right: 8px;
+}
