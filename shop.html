@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Compare App</title>
+  <title>Shop Page</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
   <link href="./css/styles.css" type="text/css" rel="stylesheet">
+  <link href="./css/product-category.css" type="text/css" rel="stylesheet">
   <link href="./css/product-list-item.css" type="text/css" rel="stylesheet">
+  <link href="./css/shop.css" type="text/css" rel="stylesheet">
   <link href="./css/responsive-styles.css" type="text/css" rel="stylesheet">
 </head>
 <body>
@@ -25,7 +27,7 @@
         <nav class="header-navigation">
           <ul class="nav-container">
             <li>
-              <a href="shop.html">Shop</a>
+              <a href="#">Shop</a>
             </li>
             <li>
               <a href="#">🔥 Unique Functions<i class="fa fa-chevron-down"></i></a>
@@ -43,7 +45,7 @@
               <a href="#">💰 Best conversations pages<i class="fa fa-chevron-down"></i></a>
               <ul class="sub-menu">
                 <li><a href="affiliate-search.html">Affiliate search</a></li>
-                <li><a href="product-category.html">Product Category</a></li>
+                <li><a href="#">Product Category</a></li>
                 <li><a href="product-details.html">Product Details</a></li>
                 <li><a href="product-details-2.html">Product Details - 2</a></li>
                 <li><a href="product-listing-list.html">Product Listing</a></li>
@@ -61,280 +63,149 @@
       </div>
     </div>
   </header>
-  <section class="search-and-compare">
+  <section class="product-category">
     <div class="content-wrapper">
-      <div class="search-compare-holder">
-        <h2 class="heading">Search and Compare</h2>
-        <div class="slogan">Read our reviews and find the best product!</div>
-        <div class="search-box">
-          <label><input type="text" placeholder="Find the best product" class="search-input"></label>
-          <button type="button" class="search-button">Search</button>
-        </div>
-        <div class="alternative">
-          <a href="#">Or do another compare here >></a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="discounts">
-    <div class="content-wrapper">
-      <div class="discounts-container">
-        <h4 class="section-heading">Check Discount deals</h4>
-        <h6 class="sub-heading">Discover the latest trends 💖</h6>
-        <div class="discounts-carousel">
-          <div class="carousel-container holder">
-            <div class="carousel-item">
-              <div class="product-item">
-                <div class="wish-or-compare">
-                  <span class="wish-item">
-                    <i class="fa fa-heart-o"></i>
-                  </span>
-                  <span class="compare-item">
-                    <i class="fa fa-bar-chart"></i>
-                  </span>
+      <div class="category-content">
+        <div class="main-content">
+          <nav class="breadcrumbs">
+            <a href="/">Home</a>
+            <i class="fa fa-angle-right separator"></i>
+            <span>Shop</span>
+          </nav>
+          <div class="filters-container">
+            <input type="checkbox" id="filters-toggle" hidden>
+            <div class="filters-title">
+              <label for="filters-toggle"><i class="fa fa-sliders"></i></label>
+              <strong>Filter Products</strong>&nbsp;/&nbsp;Showing 1 - 12 of 15 results
+            </div>
+            <div class="filters-details">
+              <div class="selected-filters">
+                <div class="selected-filter-item">
+                  <div class="filter-name">Best Products</div>
+                  <span class="remove-filter"><i class="fa fa-times"></i></span>
                 </div>
-                <div class="item-info">
-                  <figure class="product-picture">
-                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
-                  </figure>
-                  <a href="#" class="category-name">Super Products</a>
-                  <h6 class="product-name">
-                    <i class="fa fa-fire"></i>
-                    <a href="#" title="Best Product Ever Full Long Name!">
-                      Best Product Ever!
-                    </a>
-                  </h6>
-                  <div class="product-rate" title="Rated 4.85 out of 5">
-                    <span class="rate-star active">★</span>
-                    <span class="rate-star active">★</span>
-                    <span class="rate-star active">★</span>
-                    <span class="rate-star active">★</span>
-                    <span class="rate-star active">★</span>
+              </div>
+              <div class="filters-types">
+                <div class="filter-type">
+                  <h6>Price</h6>
+                  <div class="filter-options">
+                    <label>
+                      <input type="checkbox" hidden>
+                      <span>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-circle-thin"></i>
+                        None
+                      </span>
+                    </label>
+                    <label>
+                      <input type="checkbox" hidden>
+                      <span>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-circle-thin"></i>
+                        $0.00 - $100.00
+                      </span>
+                    </label>
+                    <label>
+                      <input type="checkbox" hidden>
+                      <span>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-circle-thin"></i>
+                        $100.00 - $500.00
+                      </span>
+                    </label>
                   </div>
-                  <div class="best-deal">Best deal at: <strong>Ebay</strong></div>
-                  <ul class="product-params">
-                    <li>Parameter 1</li>
-                    <li>Best parameter</li>
-                    <li>Great Usability</li>
-                  </ul>
                 </div>
-                <div class="product-additional-info">
-                  <div class="product-price">
-                    <div class="current-price">$555.99</div>
+                <div class="filter-type">
+                  <h6>Categories</h6>
+                  <div class="filter-options">
+                    <label>
+                      <input type="checkbox" hidden>
+                      <span>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-circle-thin"></i>
+                        None
+                      </span>
+                    </label>
+                    <label>
+                      <input type="checkbox" checked hidden>
+                      <span>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-circle-thin"></i>
+                        Best Products
+                        <span>14</span>
+                      </span>
+                    </label>
+                    <label>
+                      <input type="checkbox" disabled hidden>
+                      <span>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-circle-thin"></i>
+                        Other Products
+                        <span>6/11</span>
+                      </span>
+                    </label>
                   </div>
-                  <div class="more">
-                    <a href="#">+ 3 more</a>
+                </div>
+                <div class="filter-type">
+                  <h6>Options</h6>
+                  <div class="filter-options">
+                    <label>
+                      <input type="checkbox" hidden>
+                      <span>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-circle-thin"></i>
+                        None
+                      </span>
+                    </label>
+                    <label>
+                      <input type="checkbox" disabled hidden>
+                      <span>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-circle-thin"></i>
+                        Nice case
+                        <span>0/7</span>
+                      </span>
+                    </label>
+                    <label>
+                      <input type="checkbox" hidden>
+                      <span>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-circle-thin"></i>
+                        Extra pack
+                        <span>3/4</span>
+                      </span>
+                    </label>
+                    <label>
+                      <input type="checkbox" disabled hidden>
+                      <span>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-circle-thin"></i>
+                        FullHD
+                        <span>0/13</span>
+                      </span>
+                    </label>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <div class="product-item">
-                <div class="wish-or-compare">
-                  <span class="wish-item">
-                    <i class="fa fa-heart-o"></i>
-                  </span>
-                  <span class="compare-item">
-                    <i class="fa fa-bar-chart"></i>
-                  </span>
-                </div>
-                <div class="item-info">
-                  <figure class="product-picture">
-                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
-                  </figure>
-                  <a href="#" class="category-name">Best Products</a>
-                  <h6 class="product-name">
-                    <i class="fa fa-fire"></i>
-                    <a href="#" title="Best Product With long Name To check layout">
-                      Best Product With long Name To check layout
-                    </a>
-                  </h6>
-                  <div class="product-rate" title="Rated 4 out of 5">
-                    <span class="rate-star active">★</span>
-                    <span class="rate-star active">★</span>
-                    <span class="rate-star active">★</span>
-                    <span class="rate-star active">★</span>
-                    <span class="rate-star">★</span>
-                  </div>
-                  <div class="best-deal">Best deal at: <strong>Amazon</strong></div>
-                  <ul class="product-params">
-                    <li>Parameter 1</li>
-                    <li>Best parameter</li>
-                    <li>Great Usability</li>
-                    <li>More parameters</li>
-                    <li>More more parameters</li>
-                  </ul>
-                </div>
-                <div class="product-additional-info">
-                  <div class="product-price">
-                    <div class="current-price">$123.99</div>
-                  </div>
-                  <div class="more">
-                    <a href="#">+ 5 more</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="product-item">
-                <div class="wish-or-compare">
-                  <span class="wish-item">
-                    <i class="fa fa-heart-o"></i>
-                  </span>
-                  <span class="compare-item">
-                    <i class="fa fa-bar-chart"></i>
-                  </span>
-                </div>
-                <div class="item-info">
-                  <figure class="product-picture">
-                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
-                  </figure>
-                  <a href="#" class="category-name">Greatest Products</a>
-                  <h6 class="product-name">
-                    <i class="fa fa-fire"></i>
-                    <a href="#" title="Just Product">
-                      Just Product
-                    </a>
-                  </h6>
-                  <div class="product-rate" title="Rated 5 out of 5">
-                    <span class="rate-star active">★</span>
-                    <span class="rate-star active">★</span>
-                    <span class="rate-star active">★</span>
-                    <span class="rate-star active">★</span>
-                    <span class="rate-star active">★</span>
-                  </div>
-                  <div class="best-deal">Best deal at: <strong>Ebay</strong></div>
-                  <ul class="product-params">
-                    <li>Parameter 1</li>
-                  </ul>
-                </div>
-                <div class="product-additional-info">
-                  <div class="product-price">
-                    <div class="current-price">$99.99</div>
-                  </div>
-                  <div class="more">
-                    <a href="#">+ 1 more</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="product-item">
-                <div class="wish-or-compare">
-                  <span class="wish-item">
-                    <i class="fa fa-heart-o"></i>
-                  </span>
-                  <span class="compare-item">
-                    <i class="fa fa-bar-chart"></i>
-                  </span>
-                </div>
-                <div class="item-info">
-                  <figure class="product-picture">
-                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
-                  </figure>
-                  <a href="#" class="category-name">Regular Products</a>
-                  <h6 class="product-name">
-                    <i class="fa fa-fire"></i>
-                    <a href="#" title="Just Product">
-                      Simple Product
-                    </a>
-                  </h6>
-                  <div class="product-rate" title="Rated 3 out of 5">
-                    <span class="rate-star active">★</span>
-                    <span class="rate-star active">★</span>
-                    <span class="rate-star active">★</span>
-                    <span class="rate-star">★</span>
-                    <span class="rate-star">★</span>
-                  </div>
-                  <div class="best-deal">Best deal at: <strong>AliExpress</strong></div>
-                  <ul class="product-params">
-                    <li>Parameter 1</li>
-                    <li>Parameter 2</li>
-                    <li>Parameter 3</li>
-                    <li>Parameter 4</li>
-                  </ul>
-                </div>
-                <div class="product-additional-info">
-                  <div class="product-price">
-                    <div class="current-price">$999.99</div>
-                  </div>
-                  <div class="more">
-                    <a href="#">+ 10 more</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="product-item">
-                <div class="wish-or-compare">
-                  <span class="wish-item">
-                    <i class="fa fa-heart-o"></i>
-                  </span>
-                  <span class="compare-item">
-                    <i class="fa fa-bar-chart"></i>
-                  </span>
-                </div>
-                <div class="item-info">
-                  <figure class="product-picture">
-                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
-                  </figure>
-                  <a href="#" class="category-name">Home Products</a>
-                  <h6 class="product-name">
-                    <i class="fa fa-fire"></i>
-                    <a href="#" title="Just Product">
-                      Canon Camera
-                    </a>
-                  </h6>
-                  <div class="product-rate" title="Rated 4.7 out of 5">
-                    <span class="rate-star active">★</span>
-                    <span class="rate-star active">★</span>
-                    <span class="rate-star active">★</span>
-                    <span class="rate-star active">★</span>
-                    <span class="rate-star active">★</span>
-                  </div>
-                  <div class="best-deal">Best deal at: <strong>BestBuy</strong></div>
-                  <ul class="product-params">
-                    <li>100500 megapixels</li>
-                  </ul>
-                </div>
-                <div class="product-additional-info">
-                  <div class="product-price">
-                    <div class="current-price">$1999.99</div>
-                  </div>
-                  <div class="more">
-                    <a href="#">+ 4 more</a>
-                  </div>
-                </div>
+              <div class="filters-actions">
+                <button type="button" class="button-filter">Filter Selected</button>
+                <span class="on-sale">
+                  <i class="fa fa-percent"></i>
+                  Show only sale products
+                </span>
+                <span class="in-stock">
+                  <i class="fa fa-shopping-bag"></i>
+                  In stock only
+                </span>
+                <span class="clear-all">
+                  <i class="fa fa-repeat"></i>
+                  Clear all filters
+                </span>
               </div>
             </div>
           </div>
-          <button type="button" class="action-button active go-prev"><i class="fa fa-chevron-left"></i></button>
-          <button type="button" class="action-button go-next"><i class="fa fa-chevron-right"></i></button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="tracking-info-slogan">
-    <h3>We are tracking prices from more than 20 most popular shops to give you best deals</h3>
-  </section>
-  <section class="product-listing">
-    <div class="content-wrapper">
-      <div class="products-list-container">
-        <h4 class="section-heading">Find Your Product Now</h4>
-        <h6 class="sub-heading">Discover the hottest deals 🔥</h6>
-        <div class="listing-description">
-          By uniting selected online shops on one platform, searching helps you save time and discover new shops and trends worldwide that
-          were yet unknown to you.
-        </div>
-        <div class="listing tabs-container">
-          <div class="tabs-headings">
-            <span class="tab-title active">All Products</span>
-            <span class="tab-title">Under $100</span>
-            <span class="tab-title">Popular</span>
-            <span class="tab-title">Unbelievably Popular</span>
-          </div>
-          <div class="tab-content active-tab">
-            <div class="tab-listing-item">
+          <div class="category-products">
+            <div class="category-product-item">
               <div class="product-item">
                 <div class="wish-or-compare">
                   <span class="wish-item">
@@ -347,7 +218,7 @@
                 <div class="sale-item">-33%</div>
                 <div class="item-info">
                   <figure class="product-picture">
-                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
+                    <a href="product-details.html" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
                   </figure>
                   <a href="#" class="category-name">
                     <span class="expired">Expired</span>
@@ -355,7 +226,7 @@
                   </a>
                   <h6 class="product-name">
                     <i class="fa fa-fire"></i>
-                    <a href="#" title="Just Product">
+                    <a href="product-details.html" title="Just Product">
                       Canon Camera
                     </a>
                   </h6>
@@ -382,7 +253,7 @@
                 </div>
               </div>
             </div>
-            <div class="tab-listing-item">
+            <div class="category-product-item">
               <div class="product-item">
                 <div class="wish-or-compare">
                   <span class="wish-item">
@@ -394,12 +265,12 @@
                 </div>
                 <div class="item-info">
                   <figure class="product-picture">
-                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
+                    <a href="product-details.html" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
                   </figure>
                   <a href="#" class="category-name">hiTech</a>
                   <h6 class="product-name">
                     <i class="fa fa-fire"></i>
-                    <a href="#" title="Just Product">
+                    <a href="product-details.html" title="Just Product">
                       Jat Pack
                     </a>
                   </h6>
@@ -422,12 +293,12 @@
                     <div class="current-price">$19999.99</div>
                   </div>
                   <div class="more">
-                    <a href="#">+ 1 more</a>
+                    <a href="#" class="add-to-cart"><i class="fa fa-shopping-cart"></i></a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="tab-listing-item">
+            <div class="category-product-item">
               <div class="product-item">
                 <div class="wish-or-compare">
                   <span class="wish-item">
@@ -439,12 +310,12 @@
                 </div>
                 <div class="item-info">
                   <figure class="product-picture">
-                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
+                    <a href="product-details.html" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
                   </figure>
                   <a href="#" class="category-name">Different Products</a>
                   <h6 class="product-name">
                     <i class="fa fa-fire"></i>
-                    <a href="#" title="Just Product">
+                    <a href="product-details.html" title="Just Product">
                       Ibanez RG350 Guitar
                     </a>
                   </h6>
@@ -473,7 +344,7 @@
                 </div>
               </div>
             </div>
-            <div class="tab-listing-item">
+            <div class="category-product-item">
               <div class="product-item">
                 <div class="wish-or-compare">
                   <span class="wish-item">
@@ -485,7 +356,7 @@
                 </div>
                 <div class="item-info">
                   <figure class="product-picture">
-                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
+                    <a href="product-details.html" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
                   </figure>
                   <a href="#" class="category-name">
                     <span class="expired">Expired</span>
@@ -493,7 +364,7 @@
                   </a>
                   <h6 class="product-name">
                     <i class="fa fa-fire"></i>
-                    <a href="#" title="Just Product">
+                    <a href="product-details.html" title="Just Product">
                       Net
                     </a>
                   </h6>
@@ -514,12 +385,12 @@
                     <div class="current-price">$1.99</div>
                   </div>
                   <div class="more">
-                    <a href="#">+ 8 more</a>
+                    <a href="#" class="add-to-cart"><i class="fa fa-shopping-cart"></i></a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="tab-listing-item">
+            <div class="category-product-item">
               <div class="product-item">
                 <div class="wish-or-compare">
                   <span class="wish-item">
@@ -531,12 +402,12 @@
                 </div>
                 <div class="item-info">
                   <figure class="product-picture">
-                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
+                    <a href="product-details.html" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
                   </figure>
                   <a href="#" class="category-name">Home Products</a>
                   <h6 class="product-name">
                     <i class="fa fa-fire"></i>
-                    <a href="#" title="Just Product">
+                    <a href="product-details.html" title="Just Product">
                       Canon Camera
                     </a>
                   </h6>
@@ -557,12 +428,12 @@
                     <div class="current-price">$1999.99</div>
                   </div>
                   <div class="more">
-                    <a href="#">+ 4 more</a>
+                    <a href="#" class="add-to-cart"><i class="fa fa-shopping-cart"></i></a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="tab-listing-item">
+            <div class="category-product-item">
               <div class="product-item">
                 <div class="wish-or-compare">
                   <span class="wish-item">
@@ -574,12 +445,12 @@
                 </div>
                 <div class="item-info">
                   <figure class="product-picture">
-                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
+                    <a href="product-details.html" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
                   </figure>
                   <a href="#" class="category-name">Kids Products</a>
                   <h6 class="product-name">
                     <i class="fa fa-fire"></i>
-                    <a href="#" title="Just Product">
+                    <a href="product-details.html" title="Just Product">
                       Toy
                     </a>
                   </h6>
@@ -605,7 +476,7 @@
                 </div>
               </div>
             </div>
-            <div class="tab-listing-item">
+            <div class="category-product-item">
               <div class="product-item">
                 <div class="wish-or-compare">
                   <span class="wish-item">
@@ -618,7 +489,7 @@
                 <div class="sale-item">-42%</div>
                 <div class="item-info">
                   <figure class="product-picture">
-                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
+                    <a href="product-details.html" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
                   </figure>
                   <a href="#" class="category-name">
                     <span class="expired">Expired</span>
@@ -626,7 +497,7 @@
                   </a>
                   <h6 class="product-name">
                     <i class="fa fa-fire"></i>
-                    <a href="#" title="Just Product">
+                    <a href="product-details.html" title="Just Product">
                       Gilette Blade
                     </a>
                   </h6>
@@ -648,12 +519,12 @@
                     <div class="current-price">$2.39</div>
                   </div>
                   <div class="more">
-                    <a href="#">+ 17 more</a>
+                    <a href="#" class="add-to-cart"><i class="fa fa-shopping-cart"></i></a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="tab-listing-item">
+            <div class="category-product-item">
               <div class="product-item">
                 <div class="wish-or-compare">
                   <span class="wish-item">
@@ -665,12 +536,12 @@
                 </div>
                 <div class="item-info">
                   <figure class="product-picture">
-                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
+                    <a href="product-details.html" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
                   </figure>
                   <a href="#" class="category-name">Home Products</a>
                   <h6 class="product-name">
                     <i class="fa fa-fire"></i>
-                    <a href="#" title="Just Product">
+                    <a href="product-details.html" title="Just Product">
                       Canon Camera
                     </a>
                   </h6>
@@ -691,12 +562,12 @@
                     <div class="current-price">$1999.99</div>
                   </div>
                   <div class="more">
-                    <a href="#">+ 4 more</a>
+                    <a href="#" class="add-to-cart"><i class="fa fa-shopping-cart"></i></a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="tab-listing-item">
+            <div class="category-product-item">
               <div class="product-item">
                 <div class="wish-or-compare">
                   <span class="wish-item">
@@ -708,12 +579,12 @@
                 </div>
                 <div class="item-info">
                   <figure class="product-picture">
-                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
+                    <a href="product-details.html" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
                   </figure>
                   <a href="#" class="category-name">hiTech</a>
                   <h6 class="product-name">
                     <i class="fa fa-fire"></i>
-                    <a href="#" title="Just Product">
+                    <a href="product-details.html" title="Just Product">
                       Jat Pack
                     </a>
                   </h6>
@@ -741,7 +612,7 @@
                 </div>
               </div>
             </div>
-            <div class="tab-listing-item">
+            <div class="category-product-item">
               <div class="product-item">
                 <div class="wish-or-compare">
                   <span class="wish-item">
@@ -754,12 +625,12 @@
                 <div class="sale-item">-21%</div>
                 <div class="item-info">
                   <figure class="product-picture">
-                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
+                    <a href="product-details.html" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
                   </figure>
                   <a href="#" class="category-name">Different Products</a>
                   <h6 class="product-name">
                     <i class="fa fa-fire"></i>
-                    <a href="#" title="Just Product">
+                    <a href="product-details.html" title="Just Product">
                       Ibanez RG350 Guitar
                     </a>
                   </h6>
@@ -789,7 +660,7 @@
                 </div>
               </div>
             </div>
-            <div class="tab-listing-item">
+            <div class="category-product-item">
               <div class="product-item">
                 <div class="wish-or-compare">
                   <span class="wish-item">
@@ -801,7 +672,7 @@
                 </div>
                 <div class="item-info">
                   <figure class="product-picture">
-                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
+                    <a href="product-details.html" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
                   </figure>
                   <a href="#" class="category-name">
                     <span class="expired">Expired</span>
@@ -809,7 +680,7 @@
                   </a>
                   <h6 class="product-name">
                     <i class="fa fa-fire"></i>
-                    <a href="#" title="Just Product">
+                    <a href="product-details.html" title="Just Product">
                       Canon Camera
                     </a>
                   </h6>
@@ -830,12 +701,12 @@
                     <div class="current-price">$1999.99</div>
                   </div>
                   <div class="more">
-                    <a href="#">+ 4 more</a>
+                    <a href="#" class="add-to-cart"><i class="fa fa-shopping-cart"></i></a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="tab-listing-item">
+            <div class="category-product-item">
               <div class="product-item">
                 <div class="wish-or-compare">
                   <span class="wish-item">
@@ -847,7 +718,7 @@
                 </div>
                 <div class="item-info">
                   <figure class="product-picture">
-                    <a href="#" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
+                    <a href="product-details.html" class="picture-link"><img src="assets/images/product-image.png" alt="Product"></a>
                   </figure>
                   <a href="#" class="category-name">
                     <span class="expired">Expired</span>
@@ -855,7 +726,7 @@
                   </a>
                   <h6 class="product-name">
                     <i class="fa fa-fire"></i>
-                    <a href="#" title="Just Product">
+                    <a href="product-details.html" title="Just Product">
                       Knife
                     </a>
                   </h6>
@@ -876,100 +747,43 @@
                     <div class="current-price">$4.50</div>
                   </div>
                   <div class="more">
-                    <a href="#">+ 14 more</a>
+                    <a href="#" class="add-to-cart"><i class="fa fa-shopping-cart"></i></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="tab-content">
-            Here should be placed content of not active tab.
+          <div class="load-more-container">
+            <button type="button" class="button-load-more">Load More</button>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section class="info-section">
-    <div class="content-wrapper">
-      <div class="info-video-container">
-        <h4 class="section-heading">New products of this year are available Now</h4>
-        <h6 class="sub-heading">Check what you can buy this year</h6>
-        <div class="video-content">
-          <iframe width="100%" height="555" src="https://www.youtube.com/embed/_lK4cX5xGiQ" frameborder="0"
-                  allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
-        </div>
-      </div>
-    </div>
-    <img class="bottom-animated" src="./assets/images/crystal.png" alt="Animated picture">
-  </section>
-  <section class="news-reviews">
-    <div class="content-wrapper">
-      <div class="news-reviews-container">
-        <h4 class="section-heading">Check latest reviews and news</h4>
-        <h6 class="sub-heading">Discover rumors, news, comparisons ⚖</h6>
-        <div class="news-reviews-content">
-          <div class="latest-news">
-            <div class="latest-news-title">Latest News</div>
-            <div class="latest-news-items">
-              <button type="button" class="switch-button"><i class="fa fa-chevron-left"></i></button>
-              <button type="button" class="switch-button"><i class="fa fa-chevron-right"></i></button>
-              <ul class="latest-articles">
-                <li><a href="#">Breaking News! Something interesting under this link...</a></li>
-                <li><a href="#">This item should be shown by clicking on the arrows behind.</a></li>
-              </ul>
-            </div>
+        <aside class="sidebar">
+          <div class="categories-nav">
+            <ul>
+              <li>
+                Browse categories
+              </li>
+              <li>
+                <a href="#" class="category-item">Other Products</a>
+              </li>
+              <li>
+                <a href="#" class="category-item">Pets Products</a>
+              </li>
+              <li>
+                <a href="#" class="category-item">Woman's Products</a>
+              </li>
+              <li>
+                <a href="#" class="category-item">Men's Products</a>
+              </li>
+              <li>
+                <a href="#" class="category-item">Sport's Products</a>
+              </li>
+              <li>
+                <a href="#" class="category-item current">Best Products</a>
+              </li>
+            </ul>
           </div>
-          <div class="news-reviews-list">
-            <div class="news-review-item">
-              <div class="like-review">
-                <i class="fa fa-heart-o"></i>
-              </div>
-              <figure class="news-reviews-banner">
-                <a href="#"><img src="./assets/images/news-image.jpg" alt="News picture"></a>
-              </figure>
-              <div class="news-reviews-title">
-                <h6><a href="#">Amazing News about our products!</a></h6>
-                <div class="type">Product News</div>
-              </div>
-            </div>
-            <div class="news-review-item">
-              <div class="like-review">
-                <i class="fa fa-heart-o"></i>
-              </div>
-              <figure class="news-reviews-banner">
-                <a href="#"><img src="./assets/images/reviews-image.jpg" alt="News picture"></a>
-              </figure>
-              <div class="news-reviews-title">
-                <h6><a href="#">Amazing Review our product on YouTube channel.</a></h6>
-                <div class="type">Product Review</div>
-              </div>
-            </div>
-            <div class="news-review-item">
-              <div class="like-review">
-                <i class="fa fa-heart-o"></i>
-              </div>
-              <figure class="news-reviews-banner">
-                <a href="#"><img src="./assets/images/reviews-image.jpg" alt="News picture"></a>
-              </figure>
-              <div class="news-reviews-title">
-                <h6><a href="#">Just long name in the title to check layout flexibility and so on...</a></h6>
-                <div class="type">Product Review</div>
-              </div>
-            </div>
-            <div class="news-review-item">
-              <div class="like-review">
-                <i class="fa fa-heart-o"></i>
-              </div>
-              <figure class="news-reviews-banner">
-                <a href="#"><img src="./assets/images/news-image.jpg" alt="News picture"></a>
-              </figure>
-              <div class="news-reviews-title">
-                <h6><a href="#">Latest News in the World!</a></h6>
-                <div class="type">News</div>
-              </div>
-            </div>
-          </div>
-        </div>
+        </aside>
       </div>
     </div>
   </section>
