@@ -182,6 +182,9 @@
   .winner-actions {
     width: 100%;
   }
+  .top-parameter, .deal-score-container {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 923px) {
@@ -289,6 +292,31 @@
   .details-content aside.sidebar .sidebar-suggestions,
   .details-content aside.sidebar .sidebar-socials {
     padding: 12px;
+  }
+  .top-versus-holder .item-25.left-side-item,
+  .top-versus-holder .item-25.right-side-item {
+    display: none;
+  }
+  .deal-score-container {
+    display: flex;
+  }
+  .item-25.center-item {
+    width: 50%;
+  }
+  .comparing-holder,
+  .vs-reviews-container,
+  .vs-offers-container {
+    flex-direction: column;
+  }
+  .comparing-holder .comparing-image,
+  .comparing-holder .products-compare-container,
+  .vs-reviews-container .vs-reviews,
+  .vs-offers-container .vs-offer {
+    width: 100%;
+  }
+  .comparing-holder .products-compare-container,
+  .vs-reviews-container .vs-reviews {
+    padding: 18px;
   }
 }
 
@@ -415,6 +443,9 @@
   }
   .top-product-specification .content-wrapper {
     padding: 0 18px;
+  }
+  .versus-specifications .content-wrapper {
+    padding: 30px 18px 0;
   }
 }
 
@@ -723,6 +754,28 @@
   }
   .content-links-container a {
     padding: 8px;
+  }
+  section.top-text.top-versus {
+    background: #1f1a21;
+  }
+  .top-versus-holder {
+    flex-wrap: wrap;
+  }
+  .top-versus-holder .item-25.center-item {
+    width: 100%;
+  }
+  .products-compare-container .versus-row,
+  .products-compare-container .versus-row.products-row {
+    flex-direction: column;
+    margin-bottom: 12px;
+  }
+  .versus-row .versus-title {
+    width: 100%;
+    padding: 0 0 12px 0;
+    text-align: center;
+  }
+  .versus-row .versus-comparing {
+    width: 100%;
   }
 }
 
