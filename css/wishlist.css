@@ -1,0 +1,12 @@
+/* Wishlist page layout styles */
+.details-content h2 {
+  padding: 0 12px 12px 12px;
+}
+.listing-list-item span.item-order {
+  background-color: #ff4136;
+  cursor: pointer;
+}
+.item-price-action {
+  min-width: 240px;
+  max-width: 240px;
+}

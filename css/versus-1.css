@@ -176,54 +176,6 @@ section.top-text.top-versus {
   display: inline-flex;
   align-items: center;
 }
-.versus-comparing .versus-vs {
-  border-radius: 50%;
-  font-weight: 700;
-  font-family: Arial, Tahoma, sans-serif;
-  font-size: 16px;
-  height: 40px;
-  width: 40px;
-  text-align: center;
-  line-height: 40px;
-  background: #e9e9e9;
-  margin: 0 10px;
-  color: #111;
-}
-.versus-comparing .compare-winner,
-.versus-comparing .compare-looser {
-  width: 63px;
-  text-align: center;
-  font-weight: 700;
-}
-.versus-comparing .compare-winner {
-  color: #4fb200;
-}
-.versus-comparing .compare-winner.versus-icon {
-  font-size: 25px;
-}
-.versus-comparing .compare-looser {
-  color: #b5b5b5;
-}
-.versus-comparing .compare-looser.versus-icon {
-  font-size: 22px;
-  color: #c00;
-}
-.versus-specifications .content-wrapper {
-  max-width: 800px;
-  padding-top: 30px;
-  font-size: 16px;
-}
-.versus-specifications p {
-  padding-bottom: 12px;
-  line-height: 28px;
-}
-.versus-specifications h2 {
-  padding-bottom: 18px;
-  padding-top: 12px;
-}
-.versus-specifications h3 {
-  padding: 12px 0;
-}
 .versus-specifications .line-chart {
   padding: 12px 18px;
   border: 1px solid #eeeeee;
@@ -279,6 +231,7 @@ section.vs-buy-now p {
 }
 .vs-reviews-container {
   display: flex;
+  padding-bottom: 30px;
 }
 .vs-reviews-container .vs-reviews {
   width: 50%;
