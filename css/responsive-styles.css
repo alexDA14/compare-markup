@@ -689,6 +689,7 @@
   .product-details nav.breadcrumbs {
     width: 55%;
   }
+  .details-wide .product-details nav.breadcrumbs,
   .details-wide .product-details nav.breadcrumbs {
     width: 100%;
   }
