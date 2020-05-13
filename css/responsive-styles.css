@@ -262,6 +262,14 @@
   .categories-nav label.category-item {
     padding: 0 0 8px;
   }
+  .shop-page .category-content {
+    flex-wrap: wrap;
+  }
+  .shop-page .category-content .sidebar {
+    position: static;
+    width: 100%;
+    margin-top: 12px;
+  }
   .filters-container .filters-title,
   .category-content .main-content nav.breadcrumbs,
   .category-content .main-content h1.category-name {
@@ -269,6 +277,9 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+  .shop-page .category-content .main-content nav.breadcrumbs {
+    width: 100%;
   }
   .product-top-container .content-wrapper {
     min-height: 368px;
@@ -744,6 +755,9 @@
   }
   .category-content .main-content {
     padding-top: 92px;
+  }
+  .shop-page .category-content .main-content {
+    padding-top: 0;
   }
   .filters-container .filters-title,
   nav.breadcrumbs,
