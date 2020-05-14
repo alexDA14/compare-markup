@@ -1168,20 +1168,14 @@
 <script type="application/javascript">
   window.onscroll = function() { scrollFunction() };
   function scrollFunction() {
-    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+      document.getElementById('compare-to-top').classList.add('fix-comparing');
+      document.getElementById('sticky-bar').classList.add('fix-bar');
       document.body.classList.add('scrolled');
     } else {
-      document.body.classList.remove('scrolled');
-    }
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      document.getElementById('sticky-bar').classList.add('fix-bar');
-    } else {
-      document.getElementById('sticky-bar').classList.remove('fix-bar');
-    }
-    if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
-      document.getElementById('compare-to-top').classList.add('fix-comparing');
-    } else {
       document.getElementById('compare-to-top').classList.remove('fix-comparing');
+      document.getElementById('sticky-bar').classList.remove('fix-bar');
+      document.body.classList.remove('scrolled');
     }
   }
 </script>
