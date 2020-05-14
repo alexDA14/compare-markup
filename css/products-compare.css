@@ -130,7 +130,7 @@ h1.comparable-prods-titles span {
   position: fixed;
   top: 0;
   width: 840px;
-  box-shadow: 0 6px 15px -2px rgba(0, 0, 0, 0.68);
+  box-shadow: 0 6px 15px -2px rgba(0, 0, 0, 0.38);
   transition: all .3s ease;
   z-index: 3;
 }
