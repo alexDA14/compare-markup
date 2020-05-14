@@ -21,7 +21,8 @@ h1.comparable-prods-titles span {
 }
 .comparing-container {
   background-color: #FFFFFF;
-  transition: all .3s ease;
+  top: -36px;
+  transition: all .3s ease, top .6s linear;
 }
 .compare-products {
   display: flex;
@@ -351,6 +352,8 @@ li .percent-score span {
   display: inline-flex;
   align-items: center;
   padding-left: 6px;
+  font-size: 14px;
+  line-height: 15px;
 }
 .table-col .offers-list .top-offer-item .offer-store img {
   margin-right: 6px;
