@@ -108,6 +108,11 @@ h1.comparable-prods-titles span {
   font-weight: 400;
   padding-bottom: 12px;
 }
+.comparing-block h3 {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 18px 12px;
+}
 .comparing-block p {
   padding-bottom: 12px;
 }
@@ -116,6 +121,7 @@ h1.comparable-prods-titles span {
   top: 0;
   width: 840px;
   box-shadow: 0 6px 15px -2px rgba(0, 0, 0, 0.68);
+  z-index: 3;
 }
 .comparing-container.fix-comparing .comparing-parameters {
   border-top: none;
@@ -124,7 +130,7 @@ h1.comparable-prods-titles span {
 }
 .comparing-container.fix-comparing .compare-products {
   margin: 0;
-  padding: 18px 0;
+  padding: 18px 6px;
 }
 .comparing-container.fix-comparing .product-item .wish-or-compare,
 .comparing-container.fix-comparing .product-item .product-params,
@@ -200,4 +206,189 @@ h1.comparable-prods-titles span {
 }
 .table-col .table-compare-text p {
   line-height: 19px;
+}
+.comparing-block .compare-table .table-col.scrolling-list {
+  overflow: hidden;
+  padding-right: 0;
+  align-items: stretch;
+  flex-direction: column;
+}
+.table-col.scrolling-list ul {
+  flex-grow: 1;
+  flex-basis: 100%;
+  width: 100%;
+  max-height: 240px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.table-col.scrolling-list li {
+  padding: 6px 5px 8px 0;
+}
+.table-col.scrolling-list h6 {
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 3px;
+}
+.table-col.scrolling-list li .percent-score {
+  display: flex;
+  align-items: center;
+}
+li .percent-score span {
+  width: 42px;
+  color: #61b10c;
+  font-size: 13px;
+  font-weight: 700;
+}
+.table-col.scrolling-list li .bar-line-holder {
+  flex-grow: 1;
+  position: relative;
+  height: 4px;
+}
+.table-col.scrolling-list li .bar-line-holder > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #61b10c;
+  border-radius: 2px;
+}
+.table-col.scrolling-list li .faq-description {
+  display: flex;
+  align-items: center;
+}
+.table-col.scrolling-list li .faq-description span  {
+  color: #737171;
+}
+.faq-description i {
+  font-size: 20px;
+  margin-right: 6px;
+  border: 1px solid #e0dadf;
+  border-radius: 3px;
+  padding: 2px 0;
+  width: 31px;
+  text-align: center;
+}
+.other-comparisons-holder {
+  display: flex;
+  justify-content: space-between;
+}
+.other-comparisons-holder a {
+  width: 49%;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  padding: 6px 8px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.other-comparisons-holder a figure {
+  text-align: center;
+}
+.other-comparisons-holder a figure img {
+  width: 90px;
+}
+.other-comparisons-holder a figure figcaption {
+  white-space: nowrap;
+  font-size: 13px;
+}
+.other-comparisons-holder a .versus-vs {
+  border-radius: 50%;
+  font-weight: 700;
+  font-family: Arial, Tahoma, sans-serif;
+  font-size: 16px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  background: #e9e9e9;
+  color: #111;
+}
+.comparing-block .compare-table.compare-reviews .table-col {
+  align-items: stretch;
+}
+.compare-table.compare-reviews .table-col .no-compare-data {
+  align-self: center;
+}
+.table-col .vs-review-item {
+  width: 100%;
+}
+.table-col .vs-review-item .vs-review-top {
+  padding: 0 0 12px 0;
+}
+.table-col .vs-review-item .vs-review-comment {
+  padding: 12px 0 0 0;
+}
+.table-col .vs-review-item .vs-review-top h5 {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  padding-bottom: 6px;
+}
+.table-col .vs-review-item .vs-review-top h5 img {
+  width: 50px;
+  margin-right: 6px;
+}
+.table-col .vs-review-item .vs-review-top h5 a {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.table-col .vs-review-item .vs-review-top .vs-review-rate {
+  padding-bottom: 6px;
+}
+.table-col .vs-review-item .vs-review-top .vs-review-rate span {
+  font-size: 20px;
+}
+.table-col .offers-list {
+  margin-bottom: 0;
+  width: 100%;
+}
+.table-col .offers-list .top-offer-item {
+  align-items: center;
+}
+.table-col .offers-list .top-offer-item .offer-store {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 6px;
+}
+.table-col .offers-list .top-offer-item .offer-store img {
+  margin-right: 6px;
+}
+.table-col .offers-list .top-offer-item .offer-price {
+  margin-left: auto;
+}
+.compare-news {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #aeadad;
+}
+.compare-news:hover {
+  color: #aeadad;
+}
+.compare-news .news-title {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #1f1a21;
+  padding-bottom: 3px;
+  transition: color .3s ease;
+}
+.compare-news:hover .news-title {
+  color: #ff4136;
+}
+.compare-news .news-resource {
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  padding-bottom: 3px;
+}
+.compare-news .news-resource i {
+  font-size: 14px;
+  margin-left: 6px;
+}
+.compare-news .news-date {
+  font-size: 13px;
 }
