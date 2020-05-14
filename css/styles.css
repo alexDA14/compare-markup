@@ -959,3 +959,68 @@ a.offer-store img {
 .versus-specifications h3 {
   padding: 12px 0;
 }
+.vs-reviews .vs-review-item {
+  background-color: #FFFFFF;
+  border: 1px solid #ededed;
+  box-shadow: 0 1px 1px #ededed;
+  max-width: 100%;
+  position: relative;
+  margin-bottom: 18px;
+}
+.vs-review-item .vs-review-top {
+  border-bottom: 1px #e5e5e5 solid;
+  padding: 18px;
+  display: flex;
+  align-items: flex-start;
+}
+.vs-review-top figure {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+}
+.vs-review-top .vs-review-product {
+  flex-grow: 1;
+}
+.vs-review-product h5 {
+  font-size: 18px;
+  padding-bottom: 12px;
+}
+.vs-review-product h5 span.price {
+  font-weight: 400;
+  color: #ff4136;
+}
+.vs-review-product h5 span.prev-price {
+  opacity: .4;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+.vs-review-rate {
+  display: flex;
+  align-items: center;
+  padding-bottom: 12px;
+}
+.vs-review-rate span {
+  font-size: 24px;
+  line-height: 1;
+  color: #e0dadf;
+}
+.vs-review-rate span.active {
+  color: #ff8a00;
+}
+.vs-review-date {
+  font-size: 12px;
+}
+.vs-review-date span {
+  color: #808080;
+}
+.vs-review-date a {
+  color: #ff4136;
+}
+.vs-review-comment {
+  padding: 18px;
+}
