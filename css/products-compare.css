@@ -7,7 +7,6 @@ body.scrolled .page-container section.product-details {
 }
 .page-container > header {
   position: static !important;
-  z-index: 1;
 }
 .compare-page .details-content .sidebar {
   transition: none;
