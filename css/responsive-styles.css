@@ -978,13 +978,40 @@
   .top-versus-holder .item-33.versus-vs {
     margin: 24px 0;
   }
-  .page-container.compare-page {
+  /*.page-container.compare-page {
     width: 555px;
     overflow-x: auto;
   }
   .comparing-container.fix-comparing {
-    width: 100%;
+    width: 555px;
     left: 0;
+  }*/
+  h1.comparable-prods-titles {
+    font-size: 20px;
+  }
+  .compare-page .details-content .main-content {
+    padding: 0 6px;
+  }
+  .comparing-container.fix-comparing {
+    width: calc(100% - 12px);
+  }
+  .table-col .offers-list .top-offer-item .offer-price {
+    min-width: inherit;
+    padding: 5px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .comparing-block .compare-table .table-col {
+    width: 33.3%;
+    padding: 12px 6px;
+  }
+  .table-col.scrolling-list li .faq-description span {
+    font-size: 13px;
+  }
+  .table-col .table-compare-text {
+    padding: 0;
   }
 }
 
@@ -1169,6 +1196,12 @@
   }
   .top-headings .top-info.sub-title {
     font-size: 23px;
+  }
+  .table-col .compare-icon i {
+    font-size: 20px;
+  }
+  .table-col .compare-icon span {
+    font-size: 13px;
   }
 }
 
