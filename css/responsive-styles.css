@@ -149,6 +149,9 @@
   .winner-actions {
     width: 60%;
   }
+  .comparing-container.fix-comparing {
+    width: calc(100% - 36px);
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -328,6 +331,12 @@
   .comparing-holder .products-compare-container,
   .vs-reviews-container .vs-reviews {
     padding: 18px;
+  }
+  body.scrolled .page-container section.product-details {
+    padding-top: 294px;
+  }
+  .comparing-container .product-item .item-info figure img {
+    height: 80px;
   }
 }
 
@@ -600,6 +609,18 @@
     font-size: 27px;
     margin-left: 33px;
   }
+  .table-col .offers-list .top-offer-item .offer-store {
+    font-size: 12px;
+  }
+  .table-col .offers-list .top-offer-item .offer-price {
+    font-size: 14px;
+    min-width: 92px;
+    max-width: 93px;
+  }
+  .table-col .vs-review-item .vs-review-comment,
+  .table-col .table-compare-text p {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 636px) {
@@ -682,6 +703,29 @@
   }
   .top-offers .offer-item:last-of-type {
     border-bottom: none;
+  }
+  .comparing-block,
+  .compare-products {
+    padding: 18px 0;
+  }
+  .product-item .wish-or-compare {
+    padding: 5px;
+    top: 6px;
+    left: 6px;
+  }
+  .table-col .offers-list .top-offer-item .offer-price {
+    min-width: 82px;
+    max-width: 82px;
+    padding: 5px;
+  }
+  .other-comparisons-holder {
+    flex-wrap: wrap;
+  }
+  .other-comparisons-holder a {
+    width: 100%;
+  }
+  .other-comparisons-holder a:first-of-type {
+    margin-bottom: 18px;
   }
 }
 
@@ -933,6 +977,14 @@
   }
   .top-versus-holder .item-33.versus-vs {
     margin: 24px 0;
+  }
+  .page-container.compare-page {
+    width: 555px;
+    overflow-x: auto;
+  }
+  .comparing-container.fix-comparing {
+    width: 100%;
+    left: 0;
   }
 }
 
@@ -1190,5 +1242,36 @@
   }
   .users-reviews-list .reviews-tabs-headings span {
     font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 838px) and (orientation: landscape) {
+  .compare-products {
+    padding: 12px 6px;
+  }
+  .comparing-container .product-item .wish-or-compare,
+  .comparing-container .product-item .sale-item,
+  .comparing-container .product-item .item-info .product-rate,
+  .comparing-container .item-info .category-name {
+    display: none;
+  }
+  .comparing-container .product-item .item-info figure img {
+    height: 56px;
+  }
+  .comparing-container .comparing-parameters,
+  .comparing-container .product-item .item-info .product-name {
+    padding-top: 6px;
+  }
+  .comparing-container.comparing-parameters .compare-param {
+    font-size: 14px;
+  }
+  .comparing-container .comparing-parameters .compare-param i {
+    margin-bottom: 3px;
+  }
+  .comparing-container .item-info .best-deal {
+    padding-bottom: 0;
+  }
+  body.scrolled .page-container section.product-details {
+    padding-top: 180px;
   }
 }

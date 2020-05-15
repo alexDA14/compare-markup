@@ -3,7 +3,7 @@
   padding-top: 0;
 }
 body.scrolled .page-container section.product-details {
-  padding-top: 324px;
+  padding-top: 312px;
 }
 .page-container > header {
   position: static !important;
@@ -143,7 +143,7 @@ h1.comparable-prods-titles span {
 .comparing-container .product-item .item-info {
   padding: 6px;
 }
-.comparing-container.product-item .item-info .product-name {
+.comparing-container .product-item .item-info .product-name {
   padding-bottom: 6px;
 }
 .comparing-container .product-item .item-info .product-rate {
@@ -173,6 +173,9 @@ h1.comparable-prods-titles span {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.comparing-block .compare-table.compare-prices .table-col {
+  width: 33.3%;
 }
 .comparing-block .compare-table .table-col:nth-child(3n) {
   border-right: none;
