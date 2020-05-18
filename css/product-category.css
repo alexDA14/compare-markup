@@ -140,7 +140,7 @@ footer {
 .filters-actions button.button-filter {
   padding: 8px 14px;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
   color: #111;
@@ -208,7 +208,7 @@ aside.sidebar .categories-nav {
   cursor: pointer;
 }
 .categories-nav .category-item.current {
-  font-weight: 700;
+  font-weight: 400;
   border-bottom: none;
   padding-bottom: 0;
 }

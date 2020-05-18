@@ -1207,6 +1207,8 @@
   </footer>
 </div>
 <script type="application/javascript">
+  const topOffset = getOffset(document.getElementById('compare-to-top')).top;
+  
   window.onscroll = function() { scrollFunction() };
   function scrollFunction() {
     if (document.body.scrollTop > 59 || document.documentElement.scrollTop > 59) {
@@ -1215,13 +1217,21 @@
       document.getElementById('sticky-bar').classList.remove('fix-bar');
     }
     
-    if (document.body.scrollTop > 156 || document.documentElement.scrollTop > 156) {
+    if (document.body.scrollTop >= topOffset || document.documentElement.scrollTop >= topOffset) {
       document.getElementById('compare-to-top').classList.add('fix-comparing');
       document.body.classList.add('scrolled');
     } else {
       document.getElementById('compare-to-top').classList.remove('fix-comparing');
       document.body.classList.remove('scrolled');
     }
+  }
+
+  function getOffset(element) {
+    const rect = element.getBoundingClientRect();
+    return {
+      left: rect.left + window.scrollX,
+      top: rect.top + window.scrollY
+    };
   }
 </script>
 </body>
