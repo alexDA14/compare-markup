@@ -22,7 +22,7 @@
   right: 5px;
   font-family: Arial, Tahoma, sans-serif;
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 400;
   padding: 5px 7px;
   color: #FFFFFF;
   opacity: .8;
@@ -93,15 +93,13 @@
   position: relative;
   padding: 10px 0 15px 25px;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   overflow: hidden;
   width: 100%;
 }
-.item-info .product-name a {
-  white-space: nowrap;
-  display: block;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.item-info .product-name span.name-title {
+  white-space: normal;
+  word-break: break-word;
 }
 .item-info .product-name i {
   position: absolute;
@@ -114,7 +112,6 @@
   display: flex;
   align-items: center;
   padding-bottom: 6px;
-  cursor: default;
 }
 .item-info .product-rate .rate-star {
   color: #e0dadf;
@@ -125,6 +122,7 @@
   color: #ff8a00;
 }
 .item-info .best-deal {
+  display: block;
   padding-bottom: 12px;
   font-size: 13px;
   color: #808080;
@@ -151,15 +149,17 @@
   margin-right: 12px;
 }
 .product-price .previous-price {
+  display: block;
   font-size: 14px;
   color: rgba(17, 17, 17, .3);
   text-decoration: line-through;
   line-height: 19px;
 }
 .product-price .current-price {
+  display: block;
   font-size: 17px;
   color: #f04057;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 20px;
 }
 .product-additional-info .more a {

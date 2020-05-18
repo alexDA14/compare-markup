@@ -76,7 +76,7 @@ section.top-text.top-versus {
 .score-counter div:not(.count) {
   padding: 0 12px;
   color: #fff;
-  font-weight: 700;
+  font-weight: 400;
 }
 .score-counter div.count {
   width: auto;
@@ -156,7 +156,7 @@ section.top-text.top-versus {
 }
 .versus-title .vs-names {
   font-size: 17px;
-  font-weight: 700;
+  font-weight: 400;
 }
 .versus-title .versus-subtitle {
   font-size: 13px;

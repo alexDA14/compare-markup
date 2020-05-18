@@ -6,11 +6,15 @@ body {
   font-size: 15px;
   color: #111111;
   font-family: 'Roboto', 'Trebuchet MS', Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
 }
 body * {
   box-sizing: border-box;
   font-family: 'Roboto', 'Trebuchet MS', Arial, sans-serif;
+}
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 a, span.tab-title {
   color: #333333;
@@ -35,7 +39,7 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  font-weight: 700;
+  font-weight: 400;
   color: #000000;
 }
 h4.section-heading, h6.sub-heading {
@@ -50,7 +54,7 @@ h4.section-heading {
 h6.sub-heading {
   font-size: 16px;
   color: #878787;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 p {
@@ -78,6 +82,11 @@ button {
   cursor: pointer;
   background-color: transparent;
 }
+
+strong {
+  font-weight: 400;
+}
+
 .text-center {
   text-align: center;
 }
@@ -157,13 +166,17 @@ header {
   color: #fbfbfb;
   font-size: 16px;
   line-height: 21px;
-  font-weight: 700;
+  font-weight: 400;
   display: flex;
   padding-top: 8px;
 }
-.nav-container > li > a i {
-  font-size: 11px;
-  margin: 6px 0 0 6px;
+.nav-container > li > a i.fa-angle-down {
+  font-size: 14px;
+  margin: 5px 0 0 6px;
+}
+.nav-container > li > a i:not(.fa-angle-down) {
+  line-height: 20px;
+  margin-right: 5px;
 }
 .nav-container > li > ul.sub-menu {
   visibility: hidden;
@@ -197,7 +210,7 @@ header {
   display: block;
   padding: 15px 18px;
   border-top: 1px solid #eee;
-  font-weight: 400;
+  font-weight: 300;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -266,7 +279,7 @@ header {
   padding: 0 35px;
   color: #FFFFFF;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   font-family: Arial, Tahoma, sans-serif;
 }
 .search-compare-holder .alternative a {
@@ -315,7 +328,7 @@ header {
   display: flex;
 }
 .carousel-container .carousel-item .product-item {
-  min-height: 470px;
+  min-height: 500px;
 }
 
 /* Section Slogan */
@@ -327,7 +340,7 @@ header {
 .tracking-info-slogan h3 {
   color: #FFFFFF;
   font-size: 22px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1;
 }
 
@@ -468,7 +481,7 @@ section.info-section .bottom-animated {
   background-color: transparent;
   padding: 3px;
   margin: 0 3px;
-  font-size: 16px;
+  font-size: 18px;
 }
 .latest-articles {
   position: relative;
@@ -519,7 +532,7 @@ section.info-section .bottom-animated {
 }
 .news-reviews-title h6 {
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 20px;
 }
 .news-reviews-title h6 a {
@@ -554,7 +567,7 @@ footer .footer-content {
 .footer-item h5 {
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: 300;
   color: #F1F1F1;
   padding-bottom: 18px;
 }
@@ -599,7 +612,7 @@ footer .footer-content {
 .newsletter-input button.newsletter-subscribe {
   border: none;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   color: #FFFFFF;
   min-width: 150px;
   background-color: #5eb936;
@@ -609,7 +622,7 @@ footer .footer-content {
 
 /* Items styles */
 .alert-price {
-  color: #009700;
+  color: #009400;
   font-size: 13px;
   white-space: nowrap;
 }
@@ -645,7 +658,7 @@ footer .footer-content {
 .expert-score-top .score-title {
   background: #000000;
   color: #FFFFFF;
-  font-weight: 700;
+  font-weight: 400;
   padding: 6px 0;
   text-transform: uppercase;
   font-size: 11px;
@@ -744,7 +757,7 @@ span.store-suggestion .suggestion-price {
   color: #111111;
 }
 .suggestion-price .store-price {
-  font-weight: 700;
+  font-weight: 400;
 }
 .suggestion-price .store-name,
 .suggestion-price .stock-out {
@@ -755,7 +768,7 @@ span.store-suggestion .suggestion-price {
 }
 .suggestion-price .stock-out {
   color: #ff4136;
-  font-weight: bold;
+  font-weight: 400;
   margin-top: 3px;
   font-style: normal;
 }
@@ -798,7 +811,7 @@ section.top-text h2 i {
 section.top-text h3 {
   color: #fff9db;
   font-size: 21px;
-  font-weight: 400;
+  font-weight: 300;
 }
 .line-charts-container {
   padding: 30px 60px;
@@ -822,7 +835,7 @@ section.top-text h3 {
 .line-chart .line .line-value {
   position: relative;
   color: #FFFFFF;
-  font-weight: 700;
+  font-weight: 400;
   z-index: 2;
   padding-right: 12px;
   display: flex;
@@ -885,7 +898,7 @@ a.offer-store img {
   margin-right: 4px;
 }
 .top-offer-item .offer-price {
-  font-weight: 700;
+  font-weight: 400;
   padding: 5px 10px;
   background-color: #f5f9f0;
   text-align: center;
@@ -907,13 +920,13 @@ a.offer-store img {
   background-color: #ff4136;
   color: #FFFFFF;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
   padding: 5px 12px;
 }
 .versus-comparing .versus-vs {
   border-radius: 50%;
-  font-weight: 700;
+  font-weight: 400;
   font-family: Arial, Tahoma, sans-serif;
   font-size: 16px;
   height: 40px;
@@ -928,7 +941,7 @@ a.offer-store img {
 .versus-comparing .compare-looser {
   width: 63px;
   text-align: center;
-  font-weight: 700;
+  font-weight: 400;
 }
 .versus-comparing .compare-winner {
   color: #4fb200;
@@ -990,13 +1003,13 @@ a.offer-store img {
   padding-bottom: 12px;
 }
 .vs-review-product h5 span.price {
-  font-weight: 400;
+  font-weight: 300;
   color: #ff4136;
 }
 .vs-review-product h5 span.prev-price {
   opacity: .4;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   text-decoration: line-through;
 }
 .vs-review-rate {

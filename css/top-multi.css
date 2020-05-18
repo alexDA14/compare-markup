@@ -38,7 +38,7 @@ footer .newsletter-input button.newsletter-subscribe {
 .top-headings .top-info.type-product {
   margin-left: 0;
   font-size: 45px;
-  font-weight: 700;
+  font-weight: 400;
   color: #ff003f;
   padding: 6px 12px;
 }
@@ -167,7 +167,7 @@ section.product-listing {
   color: #444;
   background: none #fff;
   border: 1px solid #ccc;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 15px;
   line-height: 18px;
   transition: border-color .4s ease;
@@ -182,7 +182,7 @@ section.product-listing {
   background-color: #ff4136;
   color: #FFFFFF;
   font-size: 17px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 17px;
   text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
   padding: 10px 12px;

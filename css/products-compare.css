@@ -22,7 +22,7 @@ h1.comparable-prods-titles span {
   text-transform: uppercase;
   font-size: 12px;
   color: #AAAAAA;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0 12px;
 }
 .compare-holder {
@@ -113,12 +113,12 @@ h1.comparable-prods-titles span {
 }
 .comparing-block h4 {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
   padding-bottom: 12px;
 }
 .comparing-block h3 {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 300;
   padding: 18px 12px;
 }
 .comparing-block p {
@@ -224,7 +224,7 @@ h1.comparable-prods-titles span {
 }
 .table-col.scrolling-list h6 {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   padding-bottom: 3px;
 }
 .table-col.scrolling-list li .percent-score {
@@ -235,7 +235,7 @@ li .percent-score span {
   width: 42px;
   color: #61b10c;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 400;
 }
 .table-col.scrolling-list li .bar-line-holder {
   flex-grow: 1;
@@ -291,7 +291,7 @@ li .percent-score span {
 }
 .other-comparisons-holder a .versus-vs {
   border-radius: 50%;
-  font-weight: 700;
+  font-weight: 400;
   font-family: Arial, Tahoma, sans-serif;
   font-size: 16px;
   height: 40px;

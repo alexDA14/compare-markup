@@ -51,7 +51,7 @@ section.partners a.go-home {
   display: inline-block;
   color: #ff4136;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 /* CSS hack for IE-11 to set opacity instead of filter property on .effect-item */

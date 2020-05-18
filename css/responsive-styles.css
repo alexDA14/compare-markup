@@ -375,7 +375,7 @@
   .newsletter-input button.newsletter-subscribe {
     padding: 12px 6px;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 300;
   }
   .affiliate-search {
     padding: 0 12px;
@@ -571,7 +571,7 @@
   }
   .newsletter-input button.newsletter-subscribe {
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
     min-width: 150px;
     padding: 12px;
   }
@@ -806,6 +806,7 @@
   }
   .filters-container .filters-title,
   nav.breadcrumbs,
+  .compare-page .product-details nav.breadcrumbs,
   .category-content .main-content h1.category-name {
     width: 100%;
     padding-bottom: 12px;

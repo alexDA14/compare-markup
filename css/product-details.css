@@ -12,7 +12,7 @@ header.extra-header {
   left: 0;
   top: 0;
   z-index: 11;
-  background: rgba(255,255,255,.97);
+  background: #FFFFFF;
   box-shadow: 0 0 20px #eee;
   width: 100%;
   height: 0;
@@ -43,7 +43,7 @@ header.extra-header .content-wrapper {
 }
 .extra-name-links h2 {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   color: #333333;
   padding: 3px 0 6px 0;
 }
@@ -53,7 +53,7 @@ header.extra-header .content-wrapper {
 .anchor-links a {
   margin-right: 12px;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 400;
   color: #999999;
   transition: color .3s ease;
 }
@@ -104,7 +104,7 @@ footer {
   background-color: #111111;
   color: #FFFFFF;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
   padding: 7px;
   display: flex;
   justify-content: center;
@@ -155,7 +155,7 @@ footer {
 }
 .offer-item .name-prices .price {
   color: #ff4136;
-  font-weight: 700;
+  font-weight: 400;
 }
 .offer-item .name-prices .first-price {
   opacity: .3;
@@ -178,7 +178,7 @@ footer {
   background-color: #ff4136;
   color: #FFFFFF;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1;
   padding: 7px 10px;
   transition: box-shadow .5s linear, opacity .3s linear;
@@ -202,7 +202,7 @@ nav.breadcrumbs > * {
   display: flex;
   align-items: center;
   font-size: 22px;
-  font-weight: 400;
+  font-weight: 300;
   padding-bottom: 18px;
   margin-bottom: 18px;
   border-bottom: 1px solid #eee;
@@ -211,10 +211,8 @@ h1.product-name > i.fa-fire {
   color: #ca212a;
 }
 h1.product-name span:not(.product-add-to) {
-  display: block;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  white-space: normal;
+  word-wrap: break-word;
   padding: 0 6px;
 }
 h1.product-name span.product-add-to {
@@ -432,7 +430,7 @@ a.button-write-review {
   background-color: #ff4136;
   color: #FFFFFF;
   font-size: 17px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 17px;
   text-transform: uppercase;
   text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
@@ -519,12 +517,13 @@ a.button-write-review:hover {
 .details-block h4 > i {
   color: #ff4136;
   margin-right: 12px;
-  line-height: 16px;
+  line-height: 14px;
+  font-size: 14px;
 }
 .details-block h4 label.details-toggle {
   margin-left: auto;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 18px;
+  line-height: 18px;
   cursor: pointer;
 }
 .details-block h4 label.details-toggle i {
@@ -581,7 +580,7 @@ a.button-write-review:hover {
   text-align: center;
 }
 .store-status .store-price {
-  font-weight: 700;
+  font-weight: 400;
   padding-bottom: 12px;
 }
 .store-status .store-updated,
@@ -618,7 +617,7 @@ h2.reviews-title {
 }
 h2.specification-title span {
   opacity: .4;
-  font-weight: 400;
+  font-weight: 300;
 }
 h2.specification-title i {
   margin-right: 8px;
@@ -638,7 +637,7 @@ table.spec-table tr:last-of-type td {
 }
 table.spec-table td.spec-name {
   text-align: right;
-  font-weight: 700;
+  font-weight: 400;
   border-right: 1px solid #ededed;
 }
 table.spec-table td.spec-value a {
@@ -649,7 +648,7 @@ table.spec-table td.spec-value a:hover {
   color: #111111;
 }
 h2.reviews-title {
-  font-weight: 400;
+  font-weight: 300;
 }
 h2.reviews-title i {
   color: #ff4136;
@@ -668,14 +667,14 @@ h2.reviews-title i {
 .user-reviews-container .total-rate {
   font-size: 32px;
   color: #ff8a00;
-  font-weight: 700;
+  font-weight: 400;
   display: inline-flex;
   align-items: flex-end;
   justify-content: center;
   line-height: 1;
 }
 .user-reviews-container .total-rate span {
-  font-weight: 400;
+  font-weight: 300;
   color: #808080;
   font-size: 14px;
   line-height: 19px;
@@ -893,10 +892,10 @@ form.review-form .submit-action {
 }
 form.review-form .submit-action button.btn-submit-review {
   box-shadow: 0 18px 38px 0 rgba(0, 0, 0, .06), 0 8px 40px 0 rgba(0, 0, 0, .06);
-  background-color: #e7800c;
+  background-color: #ff4136;
   color: #FFFFFF;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 16px;
   text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
   padding: 8px 14px;
@@ -935,7 +934,7 @@ form.review-form .submit-action button.btn-submit-review:hover {
 .related-product-info .related-compare {
   font-size: 12px;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 400;
   color: #111111;
   transition: color .3s ease;
 }
