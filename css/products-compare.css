@@ -112,14 +112,14 @@ h1.comparable-prods-titles span {
   padding: 18px;
 }
 .comparing-block h4 {
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 400;
   padding-bottom: 12px;
 }
 .comparing-block h3 {
-  font-size: 24px;
-  font-weight: 300;
-  padding: 18px 12px;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 18px 12px 12px;
 }
 .comparing-block p {
   padding-bottom: 12px;
@@ -185,7 +185,7 @@ h1.comparable-prods-titles span {
   align-items: center;
 }
 .table-col .compare-icon i {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 6px;
 }
 .table-col .no-compare-data {
@@ -199,11 +199,8 @@ h1.comparable-prods-titles span {
   font-size: 14px;
 }
 .table-col .table-compare-text h5 {
-  font-size: 18px;
+  font-size: 16px;
   padding-bottom: 6px;
-}
-.table-col .table-compare-text p {
-  line-height: 19px;
 }
 .comparing-block .compare-table .table-col.scrolling-list {
   overflow: hidden;
@@ -223,9 +220,8 @@ h1.comparable-prods-titles span {
   padding: 6px 5px 8px 0;
 }
 .table-col.scrolling-list h6 {
-  font-size: 16px;
-  font-weight: 300;
-  padding-bottom: 3px;
+  font-size: 15px;
+  padding-bottom: 6px;
 }
 .table-col.scrolling-list li .percent-score {
   display: flex;
@@ -258,12 +254,12 @@ li .percent-score span {
   color: #737171;
 }
 .faq-description i {
-  font-size: 20px;
+  font-size: 18px;
   margin-right: 6px;
   border: 1px solid #e0dadf;
   border-radius: 3px;
   padding: 2px 0;
-  width: 31px;
+  width: 27px;
   text-align: center;
 }
 .other-comparisons-holder {
@@ -315,6 +311,8 @@ li .percent-score span {
 }
 .table-col .vs-review-item .vs-review-comment {
   padding: 12px 0 0 0;
+  font-size: 13px;
+  line-height: 1.5;
 }
 .table-col .vs-review-item .vs-review-top h5 {
   display: flex;
@@ -341,6 +339,7 @@ li .percent-score span {
 .table-col .offers-list {
   margin-bottom: 0;
   width: 100%;
+  align-self: flex-start;
 }
 .table-col .offers-list .top-offer-item {
   align-items: center;
@@ -392,22 +391,22 @@ li .percent-score span {
 .compare-news .news-date {
   font-size: 13px;
 }
-.versus-compare-container {
-  background-color: #f7f7f7;
-  border-radius: 5px;
-  margin-top: 24px;
+#faq-anchor .table-col {
+  flex-direction: column;
 }
-.versus-compare-container .versus-comparing {
-  display: flex;
-  padding: 10px 0;
-}
-.versus-compare-container .versus-comparing .compare-winner,
-.versus-compare-container .versus-comparing .compare-looser,
-.versus-compare-container .versus-comparing .vs-compare-title {
-  width: auto;
-  text-align: center;
-}
-.versus-compare-container .versus-comparing .vs-compare-title {
+#faq-anchor .table-col .vs-compare-title {
+  color: #666666;
   padding-bottom: 3px;
-  color: #666666
+}
+#faq-anchor .table-col .versus-icon {
+  font-size: 22px;
+}
+#faq-anchor .table-col .versus-icon.compare-looser {
+  color: #ff4136;
+}
+#faq-anchor .table-col .compare-looser {
+  color: #b5b5b5;
+}
+#faq-anchor .table-col .compare-winner {
+  color: #4fb200;
 }
