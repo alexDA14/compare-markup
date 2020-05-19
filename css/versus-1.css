@@ -43,19 +43,18 @@ section.top-text.top-versus {
   display: flex;
   align-items: center;
   padding-bottom: 12px;
-  font-size: 14px;
   color: #FFFFFF;
+}
+.top-parameter::before {
+  content: '•';
+  display: block;
+  margin-right: 6px;
 }
 .top-parameter:last-of-type {
   padding-bottom: 0;
 }
 .item-25.left-side-item .top-parameter {
   justify-content: flex-end;
-}
-.top-parameter i {
-  font-size: 18px;
-  color: #4d9fd6;
-  margin-right: 12px;
 }
 .item-25.center-item figure {
   margin-bottom: 12px;
@@ -131,7 +130,7 @@ section.top-text.top-versus {
 .comparing-image figure {
   margin-bottom: 18px;
 }
-.comparing-image span.choose-your {
+.comparing-image a.choose-your {
   display: inline-block;
   color: #fff;
   background-color: #f20800;
