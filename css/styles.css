@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-size: 15px;
+  font-size: 14px;
   color: #111111;
   font-family: 'Roboto', 'Trebuchet MS', Arial, sans-serif;
   font-weight: 300;
@@ -59,12 +59,16 @@ h6.sub-heading {
 
 p {
   margin: 0;
+  line-height: 1.5;
 }
 
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+ul li {
+  line-height: 1.5;
 }
 
 input, button, textarea, select {
@@ -348,7 +352,6 @@ header {
 nav.breadcrumbs {
   display: flex;
   align-items: center;
-  font-size: 14px;
   padding-bottom: 30px;
 }
 nav.breadcrumbs .separator {
@@ -490,6 +493,7 @@ section.info-section .bottom-animated {
 }
 .latest-articles li {
   padding: 0 0 2px 6px;
+  line-height: 17px;
 }
 .latest-articles li a,
 .latest-articles li a:hover {
@@ -586,7 +590,6 @@ footer .footer-content {
   align-items: flex-start;
 }
 .footer-info a {
-  font-size: 14px;
   text-decoration: underline;
   color: #F1F1F1;
   line-height: 18px;
@@ -667,7 +670,6 @@ footer .footer-content {
   list-style: disc outside none;
   margin-left: 12px;
   padding-bottom: 6px;
-  font-size: 16px;
 }
 .expert-score-top ul li:last-of-type {
   padding-bottom: 0;
@@ -679,7 +681,6 @@ footer .footer-content {
   padding-top: 18px;
 }
 .bar-item .score-name {
-  font-size: 14px;
   padding-bottom: 3px;
   display: flex;
   justify-content: space-between;
@@ -707,7 +708,6 @@ footer .footer-content {
 }
 .description-conclusion > div {
   width: 49%;
-  font-size: 16px;
 }
 .description-conclusion > div h6 {
   font-style: italic;
