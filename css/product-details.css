@@ -147,9 +147,8 @@ footer {
   flex-direction: column;
   align-self: stretch;
   justify-content: space-between;
-  font-size: 14px;
 }
-.offer-item .name-prices a {
+.offer-item .name-prices .top-offer-name {
   color: #111111;
   margin-bottom: 6px;
 }
@@ -177,7 +176,6 @@ footer {
   box-shadow: 0 2px 2px #E7E7E7;
   background-color: #ff4136;
   color: #FFFFFF;
-  font-size: 14px;
   font-weight: 300;
   line-height: 1;
   padding: 7px 10px;
@@ -454,7 +452,7 @@ a.button-write-review:hover {
   padding: 6px 24px 12px 0;
   display: inline-flex;
   justify-content: space-between;
-  font-size: 11px;
+  font-size: 12px;
 }
 .rating-row .rating-list {
   flex-grow: 1;
@@ -465,7 +463,6 @@ a.button-write-review:hover {
   list-style: disc outside none;
   margin-left: 12px;
   padding-bottom: 3px;
-  font-size: 14px;
 }
 .rating-list ul li:last-child {
   padding-bottom: 8px;
@@ -511,7 +508,7 @@ a.button-write-review:hover {
   border-bottom: 1px solid #ededed;
   padding: 12px 15px;
   background: #fafafa;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 18px;
 }
 .details-block h4 > i {
@@ -562,15 +559,9 @@ a.button-write-review:hover {
   min-width: 125px;
   max-width: 125px;
 }
-.store-offer .store-logo a {
-  display: block;
-}
 .store-offer .store-name {
   flex-grow: 1;
   padding: 0 15px;
-}
-.store-offer .store-name a {
-  font-size: 16px;
 }
 .store-offer .store-status {
   color: #ff4136;
@@ -578,6 +569,8 @@ a.button-write-review:hover {
   min-width: 150px;
   max-width: 151px;
   text-align: center;
+  display: inline-flex;
+  flex-direction: column;
 }
 .store-status .store-price {
   font-weight: 400;
@@ -585,14 +578,14 @@ a.button-write-review:hover {
 }
 .store-status .store-updated,
 .store-status .store-available-items {
-  font-size: 10px;
+  font-size: 12px;
   white-space: nowrap;
   color: #333333;
 }
 .store-status .store-available-items {
   padding-top: 6px;
 }
-.store-offer a.button-buy-now {
+.store-offer span.button-buy-now {
   text-transform: capitalize;
   font-size: 16px;
   line-height: 16px;
@@ -601,7 +594,7 @@ a.button-write-review:hover {
   white-space: nowrap;
 }
 .details-block .details-toggle-content h5 {
-  font-size: 21px;
+  font-size: 16px;
   margin: 18px 0 12px;
 }
 .details-block .details-toggle-content p {
@@ -610,7 +603,7 @@ a.button-write-review:hover {
 
 h2.specification-title,
 h2.reviews-title {
-  font-size: 20px;
+  font-size: 16px;
   padding-bottom: 18px;
   margin-bottom: 18px;
   border-bottom: 1px solid #ededed;
@@ -630,7 +623,6 @@ table.spec-table td {
   padding: 6px;
   width: 50%;
   border-bottom: 1px solid #ededed;
-  font-size: 14px;
 }
 table.spec-table tr:last-of-type td {
   border-bottom: none;
@@ -733,7 +725,6 @@ h2.reviews-title i {
   flex-direction: column;
 }
 .no-reviews-info strong {
-  font-size: 18px;
   padding-top: 18px;
 }
 .users-reviews-list {
@@ -745,7 +736,6 @@ h2.reviews-title i {
 }
 .users-reviews-list .reviews-tabs-headings span {
   padding: 6px 12px;
-  font-size: 14px;
   cursor: pointer;
   margin-right: 3px;
 }
@@ -789,6 +779,7 @@ h2.reviews-title i {
   padding-bottom: 12px;
   border-bottom: 1px solid #EEEEEE;
   margin-bottom: 12px;
+  font-size: 13px;
 }
 .review-details .rate-user-review {
   display: flex;
@@ -799,30 +790,17 @@ h2.reviews-title i {
   font-size: 12px;
   text-transform: uppercase;
   padding: 3px 6px;
-  transition: background-color .3s linear, color .6s ease;
 }
 .rate-user-review a.helpful-review {
   margin-right: 12px;
 }
-.rate-user-review a.helpful-review i {
+.rate-user-review a.helpful-review:hover i {
   color: #5cbd00;
 }
-.rate-user-review a.helpful-review:hover {
-  background-color: #5cbd00;
-  color: #FFFFFF;
-}
-.rate-user-review a.unhelpful-review i {
+.rate-user-review a.unhelpful-review:hover i {
   color: #cc0000;
 }
-.rate-user-review a.unhelpful-review:hover {
-  background-color: #cc0000;
-  color: #FFFFFF;
-}
-.rate-user-review a:hover i {
-  color: #FFFFFF;
-}
 .review-form-container .form-note {
-  font-size: 14px;
   color: #999999;
   padding-bottom: 12px;
 }
@@ -862,7 +840,7 @@ form.review-form input {
   resize: none;
   padding: 12px;
   border: 1px solid #cbd0d2;
-  font-size: 15px;
+  font-size: 14px;
   color: #444444;
   transition: all .3s ease;
 }
@@ -924,6 +902,7 @@ form.review-form .submit-action button.btn-submit-review:hover {
   padding-left: 12px;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 .related-product-info .related-product-price {
   font-size: 13px;

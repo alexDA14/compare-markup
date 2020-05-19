@@ -68,6 +68,9 @@ footer .newsletter-input button.newsletter-subscribe {
 .item-name a {
   font-size: 18px;
 }
+.item-details .link-wrapper {
+  display: block;
+}
 .item-details ul {
   padding-bottom: 12px;
 }
@@ -94,7 +97,7 @@ footer .newsletter-input button.newsletter-subscribe {
   opacity: 1;
 }
 .item-additional-info {
-  display: inline-flex;
+  display: flex;
   justify-content: space-around;
 }
 .item-additional-info .text-center .info-val {
@@ -134,7 +137,7 @@ footer .newsletter-input button.newsletter-subscribe {
   padding: 13px 20px;
   margin: 12px 0;
   opacity: 1;
-  transition: all .3s ease-in-out;
+  transition: opacity .3s ease-in-out, box-shadow .3s ease;
 }
 .item-price-action .listing-action:hover {
   box-shadow: -1px 6px 13px #d3d3d3;

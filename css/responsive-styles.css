@@ -332,7 +332,7 @@
   .vs-reviews-container .vs-reviews {
     padding: 18px;
   }
-  body.scrolled .page-container section.product-details {
+  body.scrolled .page-container.compare-page section.product-details {
     padding-top: 294px;
   }
   .comparing-container .product-item .item-info figure img {
@@ -833,6 +833,13 @@
   header.extra-header .content-wrapper .prod-pricing {
     width: 38%;
   }
+  h1.product-name span.product-add-to {
+    display: flex;
+    flex-direction: column;
+  }
+  span.product-add-to button.add-to-button.wishlist-btn {
+    margin-bottom: 6px;
+  }
   .content-links-container a {
     padding: 8px;
   }
@@ -945,10 +952,10 @@
     margin-bottom: 12px;
   }
   .content-links-container a {
-    display: block;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    text-align: center;
+  }
+  a.button-write-review {
+    font-size: 14px;
   }
   .product-photos-container .photo-item {
     flex-basis: 50%;
@@ -979,14 +986,6 @@
   .top-versus-holder .item-33.versus-vs {
     margin: 24px 0;
   }
-  /*.page-container.compare-page {
-    width: 555px;
-    overflow-x: auto;
-  }
-  .comparing-container.fix-comparing {
-    width: 555px;
-    left: 0;
-  }*/
   h1.comparable-prods-titles {
     font-size: 20px;
   }
@@ -1143,13 +1142,6 @@
     order: 2;
     padding: 0 0 12px 0;
   }
-  h1.product-name span.product-add-to {
-    display: flex;
-    flex-direction: column;
-  }
-  span.product-add-to button.add-to-button.wishlist-btn {
-    margin-bottom: 6px;
-  }
   .deal-pricing-container .pricing-info {
     flex-wrap: wrap;
   }
@@ -1158,6 +1150,10 @@
   }
   .store-offer .store-name a {
     font-size: 14px;
+  }
+  .content-links-container a {
+    font-size: 12px;
+    word-wrap: break-word;
   }
   table.spec-table td {
     font-size: 12px;
@@ -1261,7 +1257,6 @@
   }
   h2.specification-title,
   h2.reviews-title {
-    font-size: 18px;
     display: block;
     white-space: nowrap;
     overflow: hidden;
@@ -1305,7 +1300,7 @@
   .comparing-container .item-info .best-deal {
     padding-bottom: 0;
   }
-  body.scrolled .page-container section.product-details {
+  body.scrolled .page-container.compare-page section.product-details {
     padding-top: 180px;
   }
 }

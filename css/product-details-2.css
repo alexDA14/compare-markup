@@ -160,12 +160,10 @@ header.extra-header .content-wrapper .prod-pricing .new-price {
 }
 span.product-add-to {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
-span.product-add-to button.add-to-button {
-  border-color: transparent;
-  color: #555555;
-  font-size: 14px;
+span.product-add-to button.wishlist-btn {
+  margin-right: 6px;
 }
 .sidebar-socials .social-links {
   padding-top: 12px;
