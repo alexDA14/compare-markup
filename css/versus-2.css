@@ -15,9 +15,6 @@ footer.bottom-footer {
   font-size: 13px;
   padding: 18px;
 }
-.page-container.no-header {
-  padding-top: 0;
-}
 section.top-text.top-versus {
   background: url('../assets/images/vs-bg-fire.jpg') no-repeat center center;
   padding: 30px 0 80px;
@@ -63,7 +60,7 @@ section.top-text .bottom-lines svg {
   justify-content: center;
   color: #FFFFFF;
   font-size: 130px;
-  font-weight: 700;
+  font-weight: 400;
   position: relative;
   text-align: center;
 }
@@ -95,7 +92,7 @@ section.top-text .bottom-lines svg {
 .score-counter div:not(.count) {
   padding: 0 12px;
   color: #fff;
-  font-weight: 700;
+  font-weight: 400;
 }
 .score-counter div.count {
   width: auto;
@@ -156,7 +153,7 @@ section.comparing-section .content-wrapper h3 {
 .comparing-image figure {
   margin-bottom: 18px;
 }
-.comparing-image span.choose-your {
+.comparing-image .choose-your {
   display: inline-block;
   color: #fff;
   background-color: #f20800;
@@ -181,7 +178,7 @@ section.comparing-section .content-wrapper h3 {
 }
 .versus-title .vs-names {
   font-size: 17px;
-  font-weight: 700;
+  font-weight: 400;
 }
 .versus-title .versus-subtitle {
   font-size: 13px;
@@ -213,7 +210,7 @@ section.comparing-section .content-wrapper h3 {
   margin: 12px 0;
 }
 .line-chart .line .line-value {
-  font-weight: 400;
+  font-weight: 300;
   justify-content: space-between;
   padding-left: 12px;
 }
@@ -288,6 +285,7 @@ span.store-suggestion i.fa,
 }
 .why-buy-product h3 {
   display: flex;
+  justify-content: center;
   align-items: center;
   font-size: 21px;
   padding: 0 0 18px 0;
@@ -299,6 +297,7 @@ span.store-suggestion i.fa,
 }
 .why-buy-product ul li {
   display: flex;
+  justify-content: center;
   align-items: center;
   padding-bottom: 8px;
 }

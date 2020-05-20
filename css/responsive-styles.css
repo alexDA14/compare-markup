@@ -307,15 +307,39 @@
   .details-content aside.sidebar .sidebar-socials {
     padding: 12px;
   }
-  .top-versus-holder .item-25.left-side-item,
-  .top-versus-holder .item-25.right-side-item {
-    display: none;
+  section.top-text.top-versus.first-versus {
+    padding: 30px 0 36px;
   }
-  .item-25 .deal-score-container {
+  .first-versus .top-versus-holder {
+    flex-wrap: wrap;
+  }
+  .first-versus .top-versus-holder .item-25 {
+    width: 50%;
+    order: 2;
+  }
+  .first-versus .top-versus-holder .item-25.left-side-item {
+    order: 0;
+  }
+  .first-versus .top-versus-holder .item-25.right-side-item {
+    order: 1;
+  }
+  .first-versus .top-versus-holder .item-25.left-side-item,
+  .first-versus .top-versus-holder .item-25.right-side-item {
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .first-versus .top-versus-holder .item-25 h6 {
+    font-size: 34px;
+  }
+  .first-versus .item-25 .short-description {
+    margin-bottom: 0;
+  }
+  .first-versus .item-25 .deal-score-container {
     display: flex;
   }
-  .item-25.center-item {
-    width: 50%;
+  .first-versus .item-25.center-item figure {
+    margin-bottom: 0;
   }
   .comparing-holder,
   .vs-reviews-container,
@@ -327,6 +351,9 @@
   .vs-reviews-container .vs-reviews,
   .vs-offers-container .vs-offer {
     width: 100%;
+  }
+  .comparing-holder .comparing-image figure {
+    display: none;
   }
   .comparing-holder .products-compare-container,
   .vs-reviews-container .vs-reviews {
@@ -467,6 +494,9 @@
   .versus-specifications .content-wrapper {
     padding: 30px 18px 0;
   }
+  .versus-specifications h2.why-buy-heading {
+    font-size: 38px;
+  }
 }
 
 @media screen and (max-width: 777px) {
@@ -507,25 +537,22 @@
     padding-right: 12px;
     padding-left: 12px;
   }
-  .top-versus-holder {
-    flex-direction: column;
+  section.top-text.top-versus.second-versus {
+    padding: 24px 0 60px;
   }
-  .top-versus-holder .item-33 {
+  .second-versus .top-versus-holder .item-33 {
     width: 50%;
   }
   .top-versus-holder .item-33.versus-vs {
-    align-self: center;
+    display: none;
   }
-  .top-versus-holder .item-33:last-of-type {
-    align-self: flex-end;
+  .second-versus .top-versus-holder .item-33 h6 {
+    font-size: 26px;
   }
-  .item-33.versus-vs .vs-slash {
-    top: 12px;
-  }
-  .no-header .top-text .vs-suggestions {
+  .next-vs-page .top-text .vs-suggestions {
     flex-wrap: wrap;
   }
-  .no-header .top-text .vs-suggestions .suggestion-stores {
+  .next-vs-page .top-text .vs-suggestions .suggestion-stores {
     width: 100%;
   }
 }
@@ -852,14 +879,8 @@
   .content-links-container a {
     padding: 8px;
   }
-  .page-container:not(.no-header) section.top-text.top-versus {
+  .page-container:not(.next-vs-page) section.top-text.top-versus {
     background: #1f1a21;
-  }
-  .top-versus-holder {
-    flex-wrap: wrap;
-  }
-  .top-versus-holder .item-25.center-item {
-    width: 100%;
   }
   .products-compare-container .versus-row,
   .products-compare-container .versus-row.products-row {
@@ -989,8 +1010,13 @@
   .top-versus-holder .item-33:last-of-type {
     align-items: center;
     align-self: center;
-    width: 75%;
     text-align: center;
+  }
+  .second-versus .top-versus-holder .item-33 h6 {
+    font-size: 20px;
+  }
+  .second-versus .top-versus-holder .item-33 .short-description {
+    font-size: 14px;
   }
   .top-versus-holder .item-33.versus-vs {
     margin: 24px 0;
@@ -1021,6 +1047,29 @@
   }
   .table-col .table-compare-text {
     padding: 0;
+  }
+  .first-versus .top-versus-holder .item-25 h6 {
+    font-size: 28px;
+  }
+  .first-versus .item-25 .short-description {
+    font-size: 14px;
+  }
+  .deal-score-container .score-counter,
+  .deal-score-container .like-container {
+    margin-right: 6px;
+  }
+  .score-counter div:not(.count) {
+    padding: 0 6px;
+  }
+  .score-counter div.count {
+    font-size: 16px;
+  }
+  .deal-score-container .like-container,
+  .deal-score-container .dislike-container {
+    width: 28px;
+  }
+  .versus-specifications h2.why-buy-heading {
+    font-size: 32px;
   }
 }
 
@@ -1208,6 +1257,20 @@
   }
   .table-col .compare-icon span {
     font-size: 13px;
+  }
+  .first-versus .top-versus-holder .item-25 h6 {
+    font-size: 24px;
+  }
+  .deal-score-container .score-counter,
+  .deal-score-container .like-container {
+    margin-right: 3px;
+  }
+  .score-counter div:not(.count) {
+    padding: 0 4px;
+    overflow: hidden;
+  }
+  .score-counter div.count {
+    font-size: 15px;
   }
 }
 
