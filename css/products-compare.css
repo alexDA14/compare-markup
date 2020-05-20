@@ -108,6 +108,9 @@ h1.comparable-prods-titles span {
   font-size: 16px;
   margin-bottom: 12px;
 }
+.comparing-parameters .compare-param.active {
+  color: #1f1a21;
+}
 .comparing-block {
   padding: 18px;
 }
@@ -123,6 +126,7 @@ h1.comparable-prods-titles span {
 }
 .comparing-block p {
   padding-bottom: 12px;
+  text-align: justify;
 }
 .comparing-container.fix-comparing {
   position: fixed;
@@ -313,6 +317,7 @@ li .percent-score span {
   padding: 12px 0 0 0;
   font-size: 13px;
   line-height: 1.5;
+  text-align: justify;
 }
 .table-col .vs-review-item .vs-review-top h5 {
   display: flex;
