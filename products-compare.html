@@ -84,7 +84,7 @@
           </h1>
           <div class="compare-holder">
             <div class="comparing-container" id="compare-to-top">
-              <div class="comparing-parameters">
+              <div class="comparing-parameters" id="anchors-holder">
                 <a href="#metrics-anchor" class="compare-param">
                   <i class="fa fa-line-chart"></i>
                   Metrics
@@ -1222,6 +1222,17 @@
       left: rect.left + window.scrollX,
       top: rect.top + window.scrollY
     };
+  }
+  
+  const btnContainer = document.getElementById('anchors-holder');
+  const buttonsCollection = btnContainer.getElementsByClassName('compare-param');
+
+  for (let i = 0; i < buttonsCollection.length; i++) {
+    buttonsCollection[i].addEventListener('click', function() {
+      let current = document.getElementsByClassName('active');
+      current[0].className = current[0].className.replace(' active', '');
+      this.className += ' active';
+    });
   }
 </script>
 </body>
