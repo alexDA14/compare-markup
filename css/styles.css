@@ -820,8 +820,8 @@ section.top-text h3 {
   padding-bottom: 18px;
 }
 .line-chart h3 {
-  font-size: 18px;
-  margin-bottom: 18px;
+  font-size: 16px;
+  margin-bottom: 12px;
 }
 .line-chart .line {
   height: 28px;
@@ -959,15 +959,14 @@ a.offer-store img {
 .versus-specifications .content-wrapper {
   max-width: 800px;
   padding-top: 30px;
-  font-size: 16px;
 }
 .versus-specifications p {
   padding-bottom: 12px;
   line-height: 28px;
 }
 .versus-specifications h2 {
-  padding-bottom: 18px;
-  padding-top: 12px;
+  padding: 12px 0;
+  font-size: 18px;
 }
 .versus-specifications h3 {
   padding: 12px 0;
@@ -999,7 +998,7 @@ a.offer-store img {
   flex-grow: 1;
 }
 .vs-review-product h5 {
-  font-size: 18px;
+  font-size: 16px;
   padding-bottom: 12px;
 }
 .vs-review-product h5 span.price {

@@ -211,7 +211,7 @@ section.vs-latest-reviews > svg.bottom-waves {
 }
 section.vs-latest-reviews h2,
 section.vs-buy-now h2 {
-  font-size: 28px;
+  font-size: 24px;
   line-height: 1;
   text-align: center;
 }
@@ -248,6 +248,11 @@ section.vs-buy-now p {
 }
 .vs-offer figure {
   text-align: center;
+}
+.vs-offer figure figcaption {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
 }
 .vs-offer .offers-list {
   margin-bottom: 0;
