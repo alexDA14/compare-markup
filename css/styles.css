@@ -60,6 +60,7 @@ h6.sub-heading {
 p {
   margin: 0;
   line-height: 1.5;
+  text-align: justify;
 }
 
 ul {
@@ -577,7 +578,6 @@ footer .footer-content {
 }
 .footer-item p {
   font-size: 12px;
-  line-height: 20px;
   padding-bottom: 18px;
 }
 .footer-item .footer-links {
@@ -599,6 +599,8 @@ footer .footer-content {
   font-size: 12px;
   display: block;
   margin-bottom: 24px;
+  text-align: justify;
+  line-height: 1.5;
 }
 .footer-item form .newsletter-input {
   display: flex;
@@ -889,7 +891,7 @@ section.top-text h3 {
   border-bottom: none
 }
 .top-offer-item a.offer-store {
-  padding: 5px 8px;
+  padding-left: 6px;
   display: flex;
   align-items: center;
   flex-grow: 1;
@@ -908,6 +910,8 @@ a.offer-store img {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-left: auto;
+  height: 32px;
 }
 .top-offer-item .offer-price.out-stock {
   font-size: 11px;
@@ -1035,4 +1039,5 @@ a.offer-store img {
 }
 .vs-review-comment {
   padding: 18px;
+  text-align: justify;
 }
