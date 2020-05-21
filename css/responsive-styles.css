@@ -831,6 +831,13 @@
   .search-deal-holder .search-box button.search-button {
     font-size: 16px;
   }
+  .autocomplete-container .autocomplete-item {
+    text-align: right;
+    font-size: 14px;
+  }
+  .autocomplete-item .searched-category {
+    font-size: 12px;
+  }
   section.partners a.go-home {
     font-size: 14px;
   }
