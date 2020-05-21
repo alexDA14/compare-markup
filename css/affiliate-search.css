@@ -30,15 +30,64 @@
   padding-top: 66px;
   display: flex;
 }
+.search-deal-holder .search-box label {
+  position: relative;
+}
 .search-deal-holder .search-box label input {
   font-family: Arial, Tahoma, sans-serif;
   font-size: 21px;
+}
+.search-deal-holder .search-box label .autocomplete-container {
+  display: block;
+  height: 0;
+  width: 100%;
+  max-height: 0;
+  visibility: hidden;
+  opacity: 0;
+  background-color: #FFFFFF;
+  border: 1px solid #aea8a8;
+  border-top: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: -1;
+}
+.search-deal-holder .search-box label input:focus + .autocomplete-container {
+  height: auto;
+  max-height: 300px;
+  visibility: visible;
+  overflow-y: auto;
+  opacity: 1;
+  z-index: 1;
+  transition: opacity .6s ease;
+}
+.autocomplete-container .autocomplete-item {
+  display: block;
+  position: relative;
+  border-bottom: 1px solid #EEEEEE;
+  color: #1f1a21;
+  text-align: center;
+  font-size: 16px;
+  padding: 18px 18px 12px;
+}
+.autocomplete-container .autocomplete-item:last-of-type {
+  border-bottom: none;
+}
+.autocomplete-container .autocomplete-item:hover {
+  cursor: pointer;
+  background-color: #f3f3f3;
+}
+.autocomplete-item .searched-category {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  font-size: 13px;
+  color: #aeadad;
 }
 .search-deal-holder .search-box button.search-button {
   text-transform: uppercase;
   font-size: 20px;
 }
-
 section.partners {
   text-align: center;
   padding: 12px 0 ;
