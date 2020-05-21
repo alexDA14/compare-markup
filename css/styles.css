@@ -302,7 +302,6 @@ header {
   overflow-y: auto;
   opacity: 1;
   z-index: 1;
-  transition: opacity .6s ease;
 }
 .autocomplete-container .autocomplete-item {
   display: block;
